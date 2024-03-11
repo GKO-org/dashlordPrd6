@@ -1,0 +1,16 @@
+[
+         {
+              "id"           : "scanProblem",
+              "ip"           : "lafrenchtech.gouv.fr/",
+              "port"         : "443",
+              "severity"     : "FATAL",
+              "finding"      : "No IPv4/IPv6 address(es) for 'lafrenchtech.gouv.fr' available"
+          }
+,         {
+              "id"           : "scanTime",
+              "ip"           : "lafrenchtech.gouv.fr/",
+              "port"         : "443",
+              "severity"     : "WARN",
+              "finding"      : "Scan interrupted"
+          }
+]
