@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln impots.gouv.fr</pre>
-<p class="lead">Tue Feb 20 20:23:39 2024 – Tue Feb 20 20:26:27 2024<br>1 hosts scanned.
+<p class="lead">Mon Mar 11 18:23:48 2024 – Mon Mar 11 18:26:20 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -78,7 +78,7 @@
 <td><span class="label label-success">up</span></td>
 <td>145.242.11.100</td>
 <td>impots.gouv.fr</td>
-<td>4</td>
+<td>2</td>
 <td>0</td>
 </tr></tbody>
 </table></div>
@@ -147,22 +147,24 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-trane-info</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Problem with XML parsing of /evox/about</pre>
+<h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  GetRequest, HTTPOptions: 
+  GetRequest: 
     HTTP/1.1 200 Mire
-    Date: Tue, 20 Feb 2024 20:23:56 GMT
+    Date: Mon, 11 Mar 2024 18:24:11 GMT
     Content-Type: text/html
     Cache-Control: no-cache, no-store, must-revalidate
     Pragma: no-cache
     Expires: 0
-    Content-Length: 195809
+    Content-Length: 195817
     Connection: close
     &lt;!DOCTYPE html&gt;
     &lt;html&gt;&lt;head&gt;
     &lt;base href="/" /&gt;
     &lt;script type="text/javascript"&gt;
-    _event_transid='0';
+    _event_transid='462792737';
     &lt;/script&gt;
     &lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;
     &lt;meta charset="utf-8"&gt;
@@ -174,30 +176,34 @@
     &lt;div class="page container"&gt;
     &lt;header&gt;
     &lt;div class="logo"&gt;
-    &lt;svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="100px" y="100px" width="500px" height="150px" viewBox="0 0 962 228.1" enable-background="new 0 0 96</pre>
-<h5>http-trane-info</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Problem with XML parsing of /evox/about</pre>
+    &lt;svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="100px" y="100px" width="500px" height="150px" viewBox="0 0 962 228.1" enable-background="ne
+  HTTPOptions: 
+    HTTP/1.1 200 Mire
+    Date: Mon, 11 Mar 2024 18:24:11 GMT
+    Content-Type: text/html
+    Cache-Control: no-cache, no-store, must-revalidate
+    Pragma: no-cache
+    Expires: 0
+    Content-Length: 195817
+    Connection: close
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;&lt;head&gt;
+    &lt;base href="/" /&gt;
+    &lt;script type="text/javascript"&gt;
+    _event_transid='462792738';
+    &lt;/script&gt;
+    &lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div class="page container"&gt;
+    &lt;header&gt;
+    &lt;div class="logo"&gt;
+    &lt;svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="100px" y="100px" width="500px" height="150px" viewBox="0 0 962 228.1" enable-background="ne</pre>
 </td></tr>
-<tr class="success">
-<td title="Port">2000</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">cisco-sccp</td>
-<td title="Product"></td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
-<tr class="success">
-<td title="Port">5060</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">sip</td>
-<td title="Product"></td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
 </tbody>
 </table></div>
 </div>
@@ -230,26 +236,6 @@
 <td>443</td>
 <td>tcp</td>
 <td>https</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>145.242.11.100 - impots.gouv.fr</td>
-<td>2000</td>
-<td>tcp</td>
-<td>cisco-sccp</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>145.242.11.100 - impots.gouv.fr</td>
-<td>5060</td>
-<td>tcp</td>
-<td>sip</td>
 <td></td>
 <td></td>
 <td></td>
