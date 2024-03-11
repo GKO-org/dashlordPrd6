@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sat Mar  9 14:43:17 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln le-smv.gouv.fr
+# Nmap 7.92 scan initiated Mon Mar 11 19:10:46 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln le-smv.gouv.fr
 Nmap scan report for le-smv.gouv.fr (107.154.50.81)
-Host is up (0.15s latency).
+Host is up (0.11s latency).
 rDNS record for 107.154.50.81: mx.cnmosis.dirisi.defense.gouv.fr
 Not shown: 997 filtered tcp ports (no-response)
 PORT    STATE  SERVICE    VERSION
@@ -9,4 +9,4 @@ PORT    STATE  SERVICE    VERSION
 443/tcp open   ssl/https?
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sat Mar  9 14:47:23 2024 -- 1 IP address (1 host up) scanned in 246.13 seconds
+# Nmap done at Mon Mar 11 19:14:50 2024 -- 1 IP address (1 host up) scanned in 243.79 seconds
