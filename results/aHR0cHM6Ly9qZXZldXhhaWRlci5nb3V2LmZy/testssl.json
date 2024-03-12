@@ -507,7 +507,7 @@
               "ip"           : "jeveuxaider.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1710182550"
+              "finding"      : "1710242481"
           }
 ,         {
               "id"           : "HSTS",
@@ -1566,7 +1566,7 @@
               "ip"           : "jeveuxaider.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1710182598"
+              "finding"      : "1710242534"
           }
 ,         {
               "id"           : "HSTS",
@@ -2122,6 +2122,6 @@
               "ip"           : "jeveuxaider.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "101"
+              "finding"      : "108"
           }
 ]
