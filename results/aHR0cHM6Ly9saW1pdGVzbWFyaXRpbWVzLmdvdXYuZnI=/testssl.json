@@ -374,7 +374,7 @@
               "ip"           : "limitesmaritimes.gouv.fr/46.18.193.141",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "86 >= 60 days"
+              "finding"      : "85 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -570,7 +570,7 @@
               "ip"           : "limitesmaritimes.gouv.fr/46.18.193.141",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-8921448 seconds from localtime"
+              "finding"      : "-8981239 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
@@ -1154,6 +1154,6 @@
               "ip"           : "limitesmaritimes.gouv.fr/46.18.193.141",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "108"
+              "finding"      : "69"
           }
 ]
