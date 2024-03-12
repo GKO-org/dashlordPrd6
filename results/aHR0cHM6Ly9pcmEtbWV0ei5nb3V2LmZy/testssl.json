@@ -542,7 +542,7 @@
               "ip"           : "ira-metz.gouv.fr/54.36.91.62",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1710182088"
+              "finding"      : "1710242049"
           }
 ,         {
               "id"           : "HSTS",
@@ -1098,6 +1098,6 @@
               "ip"           : "ira-metz.gouv.fr/54.36.91.62",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "52"
+              "finding"      : "97"
           }
 ]
