@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln indre.gouv.fr</pre>
-<p class="lead">Mon Mar 11 18:28:39 2024 – Mon Mar 11 18:29:18 2024<br>1 hosts scanned.
+<p class="lead">Tue Mar 12 11:07:32 2024 – Tue Mar 12 11:08:12 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -124,21 +124,9 @@
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
 <h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest, HTTPOptions: 
+  FourOhFourRequest: 
     HTTP/1.1 403 Forbidden
-    date: Mon, 11 Mar 2024 18:28:54 GMT
-    server: Apache
-    cache-control: no-cache
-    content-type: text/html
-    age: 0
-    x-cache: Miss
-    connection: close
-    &lt;html&gt;&lt;body&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;
-    Request forbidden by administrative rules.
-    &lt;/body&gt;&lt;/html&gt;
-  GetRequest: 
-    HTTP/1.1 403 Forbidden
-    date: Mon, 11 Mar 2024 18:28:53 GMT
+    date: Tue, 12 Mar 2024 11:07:47 GMT
     server: Apache
     cache-control: no-cache
     content-type: text/html
@@ -146,6 +134,18 @@
     x-cache: Miss
     content-length: 94
     keep-alive: timeout=5, max=100
+    connection: close
+    &lt;html&gt;&lt;body&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;
+    Request forbidden by administrative rules.
+    &lt;/body&gt;&lt;/html&gt;
+  GetRequest, HTTPOptions: 
+    HTTP/1.1 403 Forbidden
+    date: Tue, 12 Mar 2024 11:07:46 GMT
+    server: Apache
+    cache-control: no-cache
+    content-type: text/html
+    age: 0
+    x-cache: Miss
     connection: close
     &lt;html&gt;&lt;body&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;
     Request forbidden by administrative rules.
@@ -159,7 +159,7 @@
     &lt;/body&gt;&lt;/html&gt;
   RTSPRequest: 
     HTTP/1.1 400 Bad Request
-    date: Mon, 11 Mar 2024 18:28:54 GMT
+    date: Tue, 12 Mar 2024 11:07:46 GMT
     server: Apache
     content-length: 226
     content-type: text/html; charset=iso-8859-1
@@ -187,23 +187,21 @@
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
 <h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest, HTTPOptions: 
+  FourOhFourRequest: 
     HTTP/1.1 403 Forbidden
-    date: Mon, 11 Mar 2024 18:29:00 GMT
+    date: Tue, 12 Mar 2024 11:07:54 GMT
     server: Apache
     cache-control: no-cache
     content-type: text/html
     age: 0
     x-cache: Miss
-    content-length: 94
-    keep-alive: timeout=5, max=100
     connection: close
     &lt;html&gt;&lt;body&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;
     Request forbidden by administrative rules.
     &lt;/body&gt;&lt;/html&gt;
-  GetRequest: 
+  GetRequest, HTTPOptions: 
     HTTP/1.1 403 Forbidden
-    date: Mon, 11 Mar 2024 18:29:00 GMT
+    date: Tue, 12 Mar 2024 11:07:52 GMT
     server: Apache
     cache-control: no-cache
     content-type: text/html
@@ -212,10 +210,17 @@
     connection: close
     &lt;html&gt;&lt;body&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;
     Request forbidden by administrative rules.
+    &lt;/body&gt;&lt;/html&gt;
+  RPCCheck, tor-versions: 
+    HTTP/1.0 400 Bad request
+    cache-control: no-cache
+    content-type: text/html
+    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;
+    Your browser sent an invalid request.
     &lt;/body&gt;&lt;/html&gt;
   RTSPRequest: 
     HTTP/1.1 400 Bad Request
-    date: Mon, 11 Mar 2024 18:29:06 GMT
+    date: Tue, 12 Mar 2024 11:08:01 GMT
     server: Apache
     content-length: 226
     content-type: text/html; charset=iso-8859-1
@@ -227,13 +232,6 @@
     &lt;h1&gt;Bad Request&lt;/h1&gt;
     &lt;p&gt;Your browser sent a request that this server could not understand.&lt;br /&gt;
     &lt;/p&gt;
-    &lt;/body&gt;&lt;/html&gt;
-  tor-versions: 
-    HTTP/1.0 400 Bad request
-    cache-control: no-cache
-    content-type: text/html
-    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;
-    Your browser sent an invalid request.
     &lt;/body&gt;&lt;/html&gt;</pre>
 </td></tr>
 </tbody>
