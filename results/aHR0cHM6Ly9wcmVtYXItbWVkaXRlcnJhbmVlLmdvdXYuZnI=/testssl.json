@@ -346,7 +346,7 @@
               "ip"           : "premar-mediterranee.gouv.fr/87.252.1.29",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "75 >= 30 days"
+              "finding"      : "74 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,7 +549,7 @@
               "ip"           : "premar-mediterranee.gouv.fr/87.252.1.29",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1710181997"
+              "finding"      : "1710241891"
           }
 ,         {
               "id"           : "HSTS",
@@ -1105,6 +1105,6 @@
               "ip"           : "premar-mediterranee.gouv.fr/87.252.1.29",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "77"
+              "finding"      : "135"
           }
 ]
