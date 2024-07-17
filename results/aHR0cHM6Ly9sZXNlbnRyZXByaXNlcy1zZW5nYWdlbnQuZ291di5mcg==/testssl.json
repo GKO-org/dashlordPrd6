@@ -178,7 +178,7 @@
               "ip"           : "lesentreprises-sengagent.gouv.fr/185.231.164.8",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'next protocol/#13172' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'encrypt-then-mac/#22' 'extended master secret/#23'"
+              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'encrypt-then-mac/#22' 'extended master secret/#23'"
           }
 ,         {
               "id"           : "TLS_session_ticket",
@@ -345,8 +345,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "lesentreprises-sengagent.gouv.fr/185.231.164.8",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "176 >= 60 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 60 days (49)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -359,7 +359,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "lesentreprises-sengagent.gouv.fr/185.231.164.8",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2024-09-04 21:59"
           }
 ,         {
@@ -507,7 +507,7 @@
               "ip"           : "lesentreprises-sengagent.gouv.fr/185.231.164.8",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1710243376"
+              "finding"      : "1721229147"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1098,6 +1098,6 @@
               "ip"           : "lesentreprises-sengagent.gouv.fr/185.231.164.8",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "101"
+              "finding"      : "55"
           }
 ]
