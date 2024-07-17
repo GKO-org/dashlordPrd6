@@ -339,7 +339,7 @@
               "ip"           : "lafrenchtech.gouv.fr/80.87.236.17",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "192 >= 60 days"
+              "finding"      : "65 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -401,8 +401,8 @@
               "id"           : "DNS_CAArecord",
               "ip"           : "lafrenchtech.gouv.fr/80.87.236.17",
               "port"         : "443",
-              "severity"     : "LOW",
-              "finding"      : "--"
+              "severity"     : "OK",
+              "finding"      : "issue=letsencrypt.org"
           }
 ,         {
               "id"           : "certificate_transparency",
@@ -500,7 +500,7 @@
               "ip"           : "lafrenchtech.gouv.fr/80.87.236.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1710243146"
+              "finding"      : "1721228920"
           }
 ,         {
               "id"           : "HSTS",
@@ -1091,6 +1091,6 @@
               "ip"           : "lafrenchtech.gouv.fr/80.87.236.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "140"
+              "finding"      : "55"
           }
 ]
