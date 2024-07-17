@@ -660,8 +660,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "inao.gouv.fr/80.87.225.235",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "139 >= 60 days"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 30 days (12)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -674,7 +674,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "inao.gouv.fr/80.87.225.235",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "HIGH",
               "finding"      : "2024-07-29 23:59"
           }
 ,         {
@@ -829,7 +829,7 @@
               "ip"           : "inao.gouv.fr/80.87.225.235",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1710241389"
+              "finding"      : "1721226552"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1422,6 +1422,6 @@
               "ip"           : "inao.gouv.fr/80.87.225.235",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "99"
+              "finding"      : "118"
           }
 ]
