@@ -199,7 +199,7 @@
               "ip"           : "isere.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -262,7 +262,7 @@
               "ip"           : "isere.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "B26EBB797B1BDE3FE102A0E7603EA58A"
+              "finding"      : "A3063E7A79A642E08E1ABD4E4E7C7A55"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -276,21 +276,21 @@
               "ip"           : "isere.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "6EC416473A8D1363B4AD7FF5C9C424DEA853B9D9"
+              "finding"      : "F2129A836A12E562F7F7471266CDDF3662DE1950"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "isere.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "D33CD2955215730C5D737D71A5CAC603DE68D237962950400D59D64627BA3F9B"
+              "finding"      : "DC95994B1AE5AD1D9C99D0254F9133E85650DFF51B02B844D4B910E13F372D71"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "isere.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -339,21 +339,21 @@
               "ip"           : "isere.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "233 >= 60 days"
+              "finding"      : "105 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "isere.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2023-10-02 22:00"
+              "finding"      : "2024-03-22 23:00"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "isere.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2024-10-31 22:59"
+              "finding"      : "2024-10-30 22:59"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -493,21 +493,21 @@
               "ip"           : "isere.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "isere.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1710242167"
+              "finding"      : "1721227550"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "isere.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1 seconds"
+              "finding"      : "0 seconds"
           }
 ,         {
               "id"           : "HSTS",
@@ -680,7 +680,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=D33CD2955215730C5D737D71A5CAC603DE68D237962950400D59D64627BA3F9B"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=DC95994B1AE5AD1D9C99D0254F9133E85650DFF51B02B844D4B910E13F372D71"
           }
 ,         {
               "id"           : "LOGJAM-common_primes",
@@ -1063,6 +1063,6 @@
               "ip"           : "isere.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "53"
+              "finding"      : "56"
           }
 ]
