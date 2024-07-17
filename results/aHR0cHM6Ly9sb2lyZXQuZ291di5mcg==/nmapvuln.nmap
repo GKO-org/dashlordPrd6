@@ -1,188 +1,114 @@
-# Nmap 7.92 scan initiated Tue Mar 12 11:52:03 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln loiret.gouv.fr
+# Nmap 7.92 scan initiated Wed Jul 17 15:29:10 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln loiret.gouv.fr
 Nmap scan report for loiret.gouv.fr (77.159.252.140)
-Host is up (0.14s latency).
+Host is up (0.092s latency).
 rDNS record for 77.159.252.140: 140.252.159.77.rev.sfr.net
 Not shown: 998 filtered tcp ports (no-response)
 PORT    STATE SERVICE   VERSION
-80/tcp  open  http      Apache
-|_http-server-header: Apache
+80/tcp  open  http
 | fingerprint-strings: 
-|   FourOhFourRequest: 
-|     HTTP/1.1 403 Forbidden
-|     date: Tue, 12 Mar 2024 11:52:21 GMT
-|     server: Apache
-|     cache-control: no-cache
-|     content-type: text/html
-|     age: 0
-|     x-cache: Miss
-|     connection: close
-|     <html><body><h1>403 Forbidden</h1>
-|     Request forbidden by administrative rules.
-|     </body></html>
-|   GetRequest: 
-|     HTTP/1.1 403 Forbidden
-|     date: Tue, 12 Mar 2024 11:52:20 GMT
-|     server: Apache
-|     cache-control: no-cache
-|     content-type: text/html
-|     age: 0
-|     x-cache: Miss
-|     content-length: 94
-|     keep-alive: timeout=5, max=100
-|     connection: close
-|     <html><body><h1>403 Forbidden</h1>
-|     Request forbidden by administrative rules.
-|     </body></html>
-|   HTTPOptions: 
-|     HTTP/1.1 403 Forbidden
-|     date: Tue, 12 Mar 2024 11:52:20 GMT
-|     server: Apache
-|     cache-control: no-cache
-|     content-type: text/html
-|     age: 0
-|     x-cache: Miss
-|     connection: close
-|     <html><body><h1>403 Forbidden</h1>
-|     Request forbidden by administrative rules.
-|     </body></html>
-|   RPCCheck, X11Probe: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, RPCCheck, X11Probe: 
 |     HTTP/1.0 400 Bad request
 |     cache-control: no-cache
 |     content-type: text/html
 |     <html><body><h1>400 Bad request</h1>
 |     Your browser sent an invalid request.
 |     </body></html>
-|   RTSPRequest: 
-|     HTTP/1.1 400 Bad Request
-|     date: Tue, 12 Mar 2024 11:52:20 GMT
-|     server: Apache
-|     content-length: 226
-|     content-type: text/html; charset=iso-8859-1
+|   FourOhFourRequest, GetRequest, HTTPOptions, RTSPRequest: 
+|     HTTP/1.1 410 Gone
+|     content-length: 114
+|     cache-control: no-cache
+|     content-type: text/html
 |     connection: close
-|     <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-|     <html><head>
-|     <title>400 Bad Request</title>
-|     </head><body>
-|     <h1>Bad Request</h1>
-|     <p>Your browser sent a request that this server could not understand.<br />
-|     </p>
+|     <html><body><h1>410 Gone</h1>
+|     resource is no longer available and will not be available again.
 |_    </body></html>
-443/tcp open  ssl/https Apache
-|_http-server-header: Apache
+443/tcp open  ssl/https
 | fingerprint-strings: 
-|   FourOhFourRequest, HTTPOptions: 
-|     HTTP/1.1 403 Forbidden
-|     date: Tue, 12 Mar 2024 11:52:27 GMT
-|     server: Apache
-|     cache-control: no-cache
-|     content-type: text/html
-|     age: 0
-|     x-cache: Miss
-|     connection: close
-|     <html><body><h1>403 Forbidden</h1>
-|     Request forbidden by administrative rules.
-|     </body></html>
-|   GetRequest: 
-|     HTTP/1.1 403 Forbidden
-|     date: Tue, 12 Mar 2024 11:52:26 GMT
-|     server: Apache
-|     cache-control: no-cache
-|     content-type: text/html
-|     age: 0
-|     x-cache: Miss
-|     connection: close
-|     <html><body><h1>403 Forbidden</h1>
-|     Request forbidden by administrative rules.
-|     </body></html>
-|   RPCCheck, tor-versions: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, RPCCheck, tor-versions: 
 |     HTTP/1.0 400 Bad request
 |     cache-control: no-cache
 |     content-type: text/html
 |     <html><body><h1>400 Bad request</h1>
 |     Your browser sent an invalid request.
 |     </body></html>
-|   RTSPRequest: 
-|     HTTP/1.1 400 Bad Request
-|     date: Tue, 12 Mar 2024 11:52:34 GMT
-|     server: Apache
-|     content-length: 226
-|     content-type: text/html; charset=iso-8859-1
+|   FourOhFourRequest, GetRequest, HTTPOptions, RTSPRequest: 
+|     HTTP/1.1 410 Gone
+|     content-length: 114
+|     cache-control: no-cache
+|     content-type: text/html
 |     connection: close
-|     <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-|     <html><head>
-|     <title>400 Bad Request</title>
-|     </head><body>
-|     <h1>Bad Request</h1>
-|     <p>Your browser sent a request that this server could not understand.<br />
-|     </p>
+|     <html><body><h1>410 Gone</h1>
+|     resource is no longer available and will not be available again.
 |_    </body></html>
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.92%I=7%D=3/12%Time=65F041F4%P=x86_64-alpine-linux-musl%r
-SF:(GetRequest,13D,"HTTP/1\.1\x20403\x20Forbidden\r\ndate:\x20Tue,\x2012\x
-SF:20Mar\x202024\x2011:52:20\x20GMT\r\nserver:\x20Apache\r\ncache-control:
-SF:\x20no-cache\r\ncontent-type:\x20text/html\r\nage:\x200\r\nx-cache:\x20
-SF:Miss\r\ncontent-length:\x2094\r\nkeep-alive:\x20timeout=5,\x20max=100\r
-SF:\nconnection:\x20close\r\n\r\n<html><body><h1>403\x20Forbidden</h1>\nRe
-SF:quest\x20forbidden\x20by\x20administrative\x20rules\.\n</body></html>\n
-SF:\n")%r(HTTPOptions,109,"HTTP/1\.1\x20403\x20Forbidden\r\ndate:\x20Tue,\
-SF:x2012\x20Mar\x202024\x2011:52:20\x20GMT\r\nserver:\x20Apache\r\ncache-c
-SF:ontrol:\x20no-cache\r\ncontent-type:\x20text/html\r\nage:\x200\r\nx-cac
-SF:he:\x20Miss\r\nconnection:\x20close\r\n\r\n<html><body><h1>403\x20Forbi
-SF:dden</h1>\nRequest\x20forbidden\x20by\x20administrative\x20rules\.\n</b
-SF:ody></html>\n\n")%r(RTSPRequest,188,"HTTP/1\.1\x20400\x20Bad\x20Request
-SF:\r\ndate:\x20Tue,\x2012\x20Mar\x202024\x2011:52:20\x20GMT\r\nserver:\x2
-SF:0Apache\r\ncontent-length:\x20226\r\ncontent-type:\x20text/html;\x20cha
-SF:rset=iso-8859-1\r\nconnection:\x20close\r\n\r\n<!DOCTYPE\x20HTML\x20PUB
-SF:LIC\x20\"-//IETF//DTD\x20HTML\x202\.0//EN\">\n<html><head>\n<title>400\
-SF:x20Bad\x20Request</title>\n</head><body>\n<h1>Bad\x20Request</h1>\n<p>Y
-SF:our\x20browser\x20sent\x20a\x20request\x20that\x20this\x20server\x20cou
-SF:ld\x20not\x20understand\.<br\x20/>\n</p>\n</body></html>\n")%r(X11Probe
-SF:,A9,"HTTP/1\.0\x20400\x20Bad\x20request\r\ncache-control:\x20no-cache\r
-SF:\ncontent-type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20reque
-SF:st</h1>\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body>
-SF:</html>\n\n")%r(FourOhFourRequest,109,"HTTP/1\.1\x20403\x20Forbidden\r\
-SF:ndate:\x20Tue,\x2012\x20Mar\x202024\x2011:52:21\x20GMT\r\nserver:\x20Ap
-SF:ache\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nage
-SF::\x200\r\nx-cache:\x20Miss\r\nconnection:\x20close\r\n\r\n<html><body><
-SF:h1>403\x20Forbidden</h1>\nRequest\x20forbidden\x20by\x20administrative\
-SF:x20rules\.\n</body></html>\n\n")%r(RPCCheck,A9,"HTTP/1\.0\x20400\x20Bad
-SF:\x20request\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html
-SF:\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20
-SF:sent\x20an\x20invalid\x20request\.\n</body></html>\n\n");
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=3/12%Time=65F041FA%P=x86_64-alpine-linux
-SF:-musl%r(GetRequest,109,"HTTP/1\.1\x20403\x20Forbidden\r\ndate:\x20Tue,\
-SF:x2012\x20Mar\x202024\x2011:52:26\x20GMT\r\nserver:\x20Apache\r\ncache-c
-SF:ontrol:\x20no-cache\r\ncontent-type:\x20text/html\r\nage:\x200\r\nx-cac
-SF:he:\x20Miss\r\nconnection:\x20close\r\n\r\n<html><body><h1>403\x20Forbi
-SF:dden</h1>\nRequest\x20forbidden\x20by\x20administrative\x20rules\.\n</b
-SF:ody></html>\n\n")%r(HTTPOptions,109,"HTTP/1\.1\x20403\x20Forbidden\r\nd
-SF:ate:\x20Tue,\x2012\x20Mar\x202024\x2011:52:27\x20GMT\r\nserver:\x20Apac
-SF:he\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nage:\
-SF:x200\r\nx-cache:\x20Miss\r\nconnection:\x20close\r\n\r\n<html><body><h1
-SF:>403\x20Forbidden</h1>\nRequest\x20forbidden\x20by\x20administrative\x2
-SF:0rules\.\n</body></html>\n\n")%r(FourOhFourRequest,109,"HTTP/1\.1\x2040
-SF:3\x20Forbidden\r\ndate:\x20Tue,\x2012\x20Mar\x202024\x2011:52:27\x20GMT
-SF:\r\nserver:\x20Apache\r\ncache-control:\x20no-cache\r\ncontent-type:\x2
-SF:0text/html\r\nage:\x200\r\nx-cache:\x20Miss\r\nconnection:\x20close\r\n
-SF:\r\n<html><body><h1>403\x20Forbidden</h1>\nRequest\x20forbidden\x20by\x
-SF:20administrative\x20rules\.\n</body></html>\n\n")%r(tor-versions,A9,"HT
+SF-Port80-TCP:V=7.92%I=7%D=7/17%Time=6697E354%P=x86_64-alpine-linux-musl%r
+SF:(GetRequest,E1,"HTTP/1\.1\x20410\x20Gone\r\ncontent-length:\x20114\r\nc
+SF:ache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\
+SF:x20close\r\n\r\n<html><body><h1>410\x20Gone</h1>\nThe\x20resource\x20is
+SF:\x20no\x20longer\x20available\x20and\x20will\x20not\x20be\x20available\
+SF:x20again\.\n</body></html>\n")%r(HTTPOptions,E1,"HTTP/1\.1\x20410\x20Go
+SF:ne\r\ncontent-length:\x20114\r\ncache-control:\x20no-cache\r\ncontent-t
+SF:ype:\x20text/html\r\nconnection:\x20close\r\n\r\n<html><body><h1>410\x2
+SF:0Gone</h1>\nThe\x20resource\x20is\x20no\x20longer\x20available\x20and\x
+SF:20will\x20not\x20be\x20available\x20again\.\n</body></html>\n")%r(RTSPR
+SF:equest,E1,"HTTP/1\.1\x20410\x20Gone\r\ncontent-length:\x20114\r\ncache-
+SF:control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20cl
+SF:ose\r\n\r\n<html><body><h1>410\x20Gone</h1>\nThe\x20resource\x20is\x20n
+SF:o\x20longer\x20available\x20and\x20will\x20not\x20be\x20available\x20ag
+SF:ain\.\n</body></html>\n")%r(X11Probe,A9,"HTTP/1\.0\x20400\x20Bad\x20req
+SF:uest\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\
+SF:n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent\x2
+SF:0an\x20invalid\x20request\.\n</body></html>\n\n")%r(FourOhFourRequest,E
+SF:1,"HTTP/1\.1\x20410\x20Gone\r\ncontent-length:\x20114\r\ncache-control:
+SF:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\
+SF:r\n<html><body><h1>410\x20Gone</h1>\nThe\x20resource\x20is\x20no\x20lon
+SF:ger\x20available\x20and\x20will\x20not\x20be\x20available\x20again\.\n<
+SF:/body></html>\n")%r(RPCCheck,A9,"HTTP/1\.0\x20400\x20Bad\x20request\r\n
+SF:cache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><
+SF:body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent\x20an\x20i
+SF:nvalid\x20request\.\n</body></html>\n\n")%r(DNSVersionBindReqTCP,A9,"HT
 SF:TP/1\.0\x20400\x20Bad\x20request\r\ncache-control:\x20no-cache\r\nconte
 SF:nt-type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>
 SF:\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>
-SF:\n\n")%r(RTSPRequest,188,"HTTP/1\.1\x20400\x20Bad\x20Request\r\ndate:\x
-SF:20Tue,\x2012\x20Mar\x202024\x2011:52:34\x20GMT\r\nserver:\x20Apache\r\n
-SF:content-length:\x20226\r\ncontent-type:\x20text/html;\x20charset=iso-88
-SF:59-1\r\nconnection:\x20close\r\n\r\n<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-/
-SF:/IETF//DTD\x20HTML\x202\.0//EN\">\n<html><head>\n<title>400\x20Bad\x20R
-SF:equest</title>\n</head><body>\n<h1>Bad\x20Request</h1>\n<p>Your\x20brow
-SF:ser\x20sent\x20a\x20request\x20that\x20this\x20server\x20could\x20not\x
-SF:20understand\.<br\x20/>\n</p>\n</body></html>\n")%r(RPCCheck,A9,"HTTP/1
-SF:\.0\x20400\x20Bad\x20request\r\ncache-control:\x20no-cache\r\ncontent-t
-SF:ype:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYo
-SF:ur\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n\n
-SF:");
+SF:\n\n")%r(DNSStatusRequestTCP,A9,"HTTP/1\.0\x20400\x20Bad\x20request\r\n
+SF:cache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><
+SF:body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent\x20an\x20i
+SF:nvalid\x20request\.\n</body></html>\n\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=7/17%Time=6697E35B%P=x86_64-alpine-linux
+SF:-musl%r(GetRequest,E1,"HTTP/1\.1\x20410\x20Gone\r\ncontent-length:\x201
+SF:14\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconne
+SF:ction:\x20close\r\n\r\n<html><body><h1>410\x20Gone</h1>\nThe\x20resourc
+SF:e\x20is\x20no\x20longer\x20available\x20and\x20will\x20not\x20be\x20ava
+SF:ilable\x20again\.\n</body></html>\n")%r(HTTPOptions,E1,"HTTP/1\.1\x2041
+SF:0\x20Gone\r\ncontent-length:\x20114\r\ncache-control:\x20no-cache\r\nco
+SF:ntent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n<html><body><h1
+SF:>410\x20Gone</h1>\nThe\x20resource\x20is\x20no\x20longer\x20available\x
+SF:20and\x20will\x20not\x20be\x20available\x20again\.\n</body></html>\n")%
+SF:r(FourOhFourRequest,E1,"HTTP/1\.1\x20410\x20Gone\r\ncontent-length:\x20
+SF:114\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconn
+SF:ection:\x20close\r\n\r\n<html><body><h1>410\x20Gone</h1>\nThe\x20resour
+SF:ce\x20is\x20no\x20longer\x20available\x20and\x20will\x20not\x20be\x20av
+SF:ailable\x20again\.\n</body></html>\n")%r(tor-versions,A9,"HTTP/1\.0\x20
+SF:400\x20Bad\x20request\r\ncache-control:\x20no-cache\r\ncontent-type:\x2
+SF:0text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20b
+SF:rowser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n\n")%r(RT
+SF:SPRequest,E1,"HTTP/1\.1\x20410\x20Gone\r\ncontent-length:\x20114\r\ncac
+SF:he-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x2
+SF:0close\r\n\r\n<html><body><h1>410\x20Gone</h1>\nThe\x20resource\x20is\x
+SF:20no\x20longer\x20available\x20and\x20will\x20not\x20be\x20available\x2
+SF:0again\.\n</body></html>\n")%r(RPCCheck,A9,"HTTP/1\.0\x20400\x20Bad\x20
+SF:request\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n
+SF:\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent
+SF:\x20an\x20invalid\x20request\.\n</body></html>\n\n")%r(DNSVersionBindRe
+SF:qTCP,A9,"HTTP/1\.0\x20400\x20Bad\x20request\r\ncache-control:\x20no-cac
+SF:he\r\ncontent-type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20r
+SF:equest</h1>\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n</b
+SF:ody></html>\n\n")%r(DNSStatusRequestTCP,A9,"HTTP/1\.0\x20400\x20Bad\x20
+SF:request\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n
+SF:\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent
+SF:\x20an\x20invalid\x20request\.\n</body></html>\n\n");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Tue Mar 12 11:52:49 2024 -- 1 IP address (1 host up) scanned in 45.69 seconds
+# Nmap done at Wed Jul 17 15:29:48 2024 -- 1 IP address (1 host up) scanned in 37.88 seconds
