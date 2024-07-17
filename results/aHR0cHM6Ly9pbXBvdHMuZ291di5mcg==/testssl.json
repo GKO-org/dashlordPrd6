@@ -52,8 +52,8 @@
               "id"           : "TLS1_3",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "offered with final"
+              "severity"     : "INFO",
+              "finding"      : "not offered + downgraded to weaker protocol"
           }
 ,         {
               "id"           : "ALPN",
@@ -171,7 +171,7 @@
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "'renegotiation info/#65281' 'EC point formats/#11' 'supported versions/#43' 'key share/#51' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'extended master secret/#23'"
+              "finding"      : "'renegotiation info/#65281' 'EC point formats/#11' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'extended master secret/#23'"
           }
 ,         {
               "id"           : "TLS_session_ticket",
@@ -199,7 +199,7 @@
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -209,11 +209,11 @@
               "finding"      : "random"
           }
 ,         {
-              "id"           : "certificate_compression",
+              "id"           : "cert_compression",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "none"
+              "finding"      : "N/A"
           }
 ,         {
               "id"           : "clientAuth",
@@ -262,7 +262,7 @@
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "46DD2FD9079AE7CE4C651D539DF6E119"
+              "finding"      : "2A4E534387C28482535A8D97C1BE1320"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -276,21 +276,21 @@
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "7F66860254E95D27B7339CD3A35F83BEB2FAE4E3"
+              "finding"      : "C166CBA6BFA9463264DD0A665E53F1FFAF651171"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "6B91D14549F1CF2CD957DAF0EEA7ADC9670A720E4E435C8A9ED7656C86DE8A1F"
+              "finding"      : "099C3B7C07C111EE3E3C5107B578B4FAAF0B6E13C3AF791EF20B06A0244C9887"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -339,21 +339,21 @@
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "367 >= 60 days"
+              "finding"      : "239 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-02-11 23:00"
+              "finding"      : "2024-03-21 23:00"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2025-03-14 22:59"
+              "finding"      : "2025-03-13 22:59"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -666,7 +666,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=6B91D14549F1CF2CD957DAF0EEA7ADC9670A720E4E435C8A9ED7656C86DE8A1F"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=099C3B7C07C111EE3E3C5107B578B4FAAF0B6E13C3AF791EF20B06A0244C9887"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -748,56 +748,56 @@
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-android_X",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-android_11",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-android_12",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-chrome_79_win10",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-chrome_101_win10",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-firefox_66_win81",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-firefox_100_win10",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-ie_6_xp",
@@ -860,28 +860,28 @@
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-safari_121_ios_122",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-safari_130_osx_10146",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-safari_154_osx_1231",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-java_7u25",
@@ -902,21 +902,21 @@
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-java1703",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-go_1178",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-libressl_283",
@@ -944,14 +944,14 @@
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-openssl_303",
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-apple_mail_16_0",
@@ -965,7 +965,7 @@
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "rating_spec",
@@ -1049,6 +1049,6 @@
               "ip"           : "impots.gouv.fr/145.242.11.100",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "87"
+              "finding"      : "51"
           }
 ]
