@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Tue Mar 12 11:12:46 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln premar-mediterranee.gouv.fr
+# Nmap 7.92 scan initiated Wed Jul 17 14:41:25 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln premar-mediterranee.gouv.fr
 Nmap scan report for premar-mediterranee.gouv.fr (87.252.1.29)
-Host is up (0.14s latency).
+Host is up (0.079s latency).
 rDNS record for 87.252.1.29: oxd-mutu-01.oxyd.net
 Not shown: 928 filtered tcp ports (no-response), 59 closed tcp ports (reset)
 PORT     STATE SERVICE       VERSION
@@ -22,40 +22,39 @@ PORT     STATE SERVICE       VERSION
 993/tcp  open  ssl/imap      Dovecot imapd
 995/tcp  open  ssl/pop3      Dovecot pop3d
 8443/tcp open  ssl/https-alt sw-cp-server
-|_http-server-header: sw-cp-server
 | fingerprint-strings: 
 |   FourOhFourRequest: 
 |     HTTP/1.1 404 Not Found
 |     Server: sw-cp-server
-|     Date: Tue, 12 Mar 2024 11:13:10 GMT
+|     Date: Wed, 17 Jul 2024 14:41:42 GMT
 |     Content-Type: text/html
-|     Content-Length: 906
+|     Content-Length: 908
 |     Connection: close
-|     ETag: "65afd86e-38a"
+|     ETag: "668512b1-38c"
 |     <!DOCTYPE html>
-|     <!-- Copyright 1999-2023. Plesk International GmbH. All rights reserved. -->
+|     <!-- Copyright 1999-2024. WebPros International GmbH. All rights reserved. -->
 |     <html lang="en" dir="ltr">
 |     <head>
 |     <meta charset="utf-8">
 |     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 |     <title>404 Page Not Found</title>
 |     <link rel="shortcut icon" href="/favicon.ico">
-|     <link rel="stylesheet" href="/ui-library/plesk-ui-library.css?3.35.2">
-|     <script src="/ui-library/plesk-ui-library.min.js?3.35.2"></script>
+|     <link rel="stylesheet" href="/ui-library/plesk-ui-library.css?3.38.1">
+|     <script src="/ui-library/plesk-ui-library.min.js?3.38.1"></script>
 |     <script src="/cp/javascript/vendors.js"></script>
 |     <script src="/cp/javascript/main.js"></script>
 |     <script src="/error_docs/uat.js?v3"></script>
-|     <link href="/error_docs/app.css?a8338f528ed5fc952063" rel="stylesheet"></head>
+|     <link href="/error_docs/app.css?c510e3d47ce40086153c" rel="stylesheet"></head>
 |     <body>
-|     <div id
+|     <div
 |   GetRequest: 
 |     HTTP/1.1 303 See Other
 |     Server: sw-cp-server
-|     Date: Tue, 12 Mar 2024 11:13:09 GMT
+|     Date: Wed, 17 Jul 2024 14:41:42 GMT
 |     Content-Type: text/html; charset=UTF-8
 |     Connection: close
 |     Expires: Fri, 28 May 1999 00:00:00 GMT
-|     Last-Modified: Tue, 12 Mar 2024 11:13:09 GMT
+|     Last-Modified: Wed, 17 Jul 2024 14:41:42 GMT
 |     Cache-Control: no-store, no-cache, must-revalidate
 |     Cache-Control: post-check=0, pre-check=0
 |     Pragma: no-cache
@@ -67,80 +66,81 @@ PORT     STATE SERVICE       VERSION
 |   HTTPOptions: 
 |     HTTP/1.1 405 Not Allowed
 |     Server: sw-cp-server
-|     Date: Tue, 12 Mar 2024 11:13:09 GMT
+|     Date: Wed, 17 Jul 2024 14:41:42 GMT
 |     Content-Type: text/html
-|     Content-Length: 914
+|     Content-Length: 916
 |     Connection: close
-|     ETag: "65afd86e-392"
+|     ETag: "668512b1-394"
 |     <!DOCTYPE html>
-|     <!-- Copyright 1999-2023. Plesk International GmbH. All rights reserved. -->
+|     <!-- Copyright 1999-2024. WebPros International GmbH. All rights reserved. -->
 |     <html lang="en" dir="ltr">
 |     <head>
 |     <meta charset="utf-8">
 |     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 |     <title>405 Method Not Allowed</title>
 |     <link rel="shortcut icon" href="/favicon.ico">
-|     <link rel="stylesheet" href="/ui-library/plesk-ui-library.css?3.35.2">
-|     <script src="/ui-library/plesk-ui-library.min.js?3.35.2"></script>
+|     <link rel="stylesheet" href="/ui-library/plesk-ui-library.css?3.38.1">
+|     <script src="/ui-library/plesk-ui-library.min.js?3.38.1"></script>
 |     <script src="/cp/javascript/vendors.js"></script>
 |     <script src="/cp/javascript/main.js"></script>
 |     <script src="/error_docs/uat.js?v3"></script>
-|     <link href="/error_docs/app.css?a8338f528ed5fc952063" rel="stylesheet"></head>
+|     <link href="/error_docs/app.css?c510e3d47ce40086153c" rel="stylesheet"></head>
 |_    <body>
+|_http-server-header: sw-cp-server
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port53-TCP:V=7.92%I=7%D=3/12%Time=65F038C3%P=x86_64-alpine-linux-musl%r
+SF-Port53-TCP:V=7.92%I=7%D=7/17%Time=6697D824%P=x86_64-alpine-linux-musl%r
 SF:(DNSVersionBindReqTCP,31,"\0/\0\x06\x85\0\0\x01\0\x01\0\0\0\0\x07versio
 SF:n\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03\0\0\0\0\0\x05\x04none");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port8443-TCP:V=7.92%T=SSL%I=7%D=3/12%Time=65F038C5%P=x86_64-alpine-linu
+SF-Port8443-TCP:V=7.92%T=SSL%I=7%D=7/17%Time=6697D826%P=x86_64-alpine-linu
 SF:x-musl%r(GetRequest,216,"HTTP/1\.1\x20303\x20See\x20Other\r\nServer:\x2
-SF:0sw-cp-server\r\nDate:\x20Tue,\x2012\x20Mar\x202024\x2011:13:09\x20GMT\
+SF:0sw-cp-server\r\nDate:\x20Wed,\x2017\x20Jul\x202024\x2014:41:42\x20GMT\
 SF:r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nConnection:\x20close
 SF:\r\nExpires:\x20Fri,\x2028\x20May\x201999\x2000:00:00\x20GMT\r\nLast-Mo
-SF:dified:\x20Tue,\x2012\x20Mar\x202024\x2011:13:09\x20GMT\r\nCache-Contro
+SF:dified:\x20Wed,\x2017\x20Jul\x202024\x2014:41:42\x20GMT\r\nCache-Contro
 SF:l:\x20no-store,\x20no-cache,\x20must-revalidate\r\nCache-Control:\x20po
 SF:st-check=0,\x20pre-check=0\r\nPragma:\x20no-cache\r\nP3P:\x20CP=\"NON\x
 SF:20COR\x20CURa\x20ADMa\x20OUR\x20NOR\x20UNI\x20COM\x20NAV\x20STA\"\r\nX-
 SF:Frame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r
 SF:\nLocation:\x20https://localhost:8443/login\.php\r\nX-Content-Type-Opti
-SF:ons:\x20nosniff\r\n\r\n")%r(HTTPOptions,440,"HTTP/1\.1\x20405\x20Not\x2
-SF:0Allowed\r\nServer:\x20sw-cp-server\r\nDate:\x20Tue,\x2012\x20Mar\x2020
-SF:24\x2011:13:09\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\
-SF:x20914\r\nConnection:\x20close\r\nETag:\x20\"65afd86e-392\"\r\n\r\n<!DO
-SF:CTYPE\x20html>\n<!--\x20Copyright\x201999-2023\.\x20Plesk\x20Internatio
-SF:nal\x20GmbH\.\x20All\x20rights\x20reserved\.\x20-->\n<html\x20lang=\"en
-SF:\"\x20dir=\"ltr\">\n<head>\n\x20\x20\x20\x20<meta\x20charset=\"utf-8\">
-SF:\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=device-
-SF:width,\x20initial-scale=1,\x20shrink-to-fit=no\">\n\x20\x20\x20\x20<tit
-SF:le>405\x20Method\x20Not\x20Allowed</title>\n\x20\x20\x20\x20<link\x20re
-SF:l=\"shortcut\x20icon\"\x20href=\"/favicon\.ico\">\n\x20\x20\x20\x20<lin
-SF:k\x20rel=\"stylesheet\"\x20href=\"/ui-library/plesk-ui-library\.css\?3\
-SF:.35\.2\">\n\x20\x20\x20\x20<script\x20src=\"/ui-library/plesk-ui-librar
-SF:y\.min\.js\?3\.35\.2\"></script>\n\x20\x20\x20\x20<script\x20src=\"/cp/
-SF:javascript/vendors\.js\"></script>\n\x20\x20\x20\x20<script\x20src=\"/c
-SF:p/javascript/main\.js\"></script>\n\x20\x20\x20\x20<script\x20src=\"/er
-SF:ror_docs/uat\.js\?v3\"></script>\n<link\x20href=\"/error_docs/app\.css\
-SF:?a8338f528ed5fc952063\"\x20rel=\"stylesheet\"></head>\n<body>\n<")%r(Fo
-SF:urOhFourRequest,436,"HTTP/1\.1\x20404\x20Not\x20Found\r\nServer:\x20sw-
-SF:cp-server\r\nDate:\x20Tue,\x2012\x20Mar\x202024\x2011:13:10\x20GMT\r\nC
-SF:ontent-Type:\x20text/html\r\nContent-Length:\x20906\r\nConnection:\x20c
-SF:lose\r\nETag:\x20\"65afd86e-38a\"\r\n\r\n<!DOCTYPE\x20html>\n<!--\x20Co
-SF:pyright\x201999-2023\.\x20Plesk\x20International\x20GmbH\.\x20All\x20ri
-SF:ghts\x20reserved\.\x20-->\n<html\x20lang=\"en\"\x20dir=\"ltr\">\n<head>
-SF:\n\x20\x20\x20\x20<meta\x20charset=\"utf-8\">\n\x20\x20\x20\x20<meta\x2
-SF:0name=\"viewport\"\x20content=\"width=device-width,\x20initial-scale=1,
-SF:\x20shrink-to-fit=no\">\n\x20\x20\x20\x20<title>404\x20Page\x20Not\x20F
-SF:ound</title>\n\x20\x20\x20\x20<link\x20rel=\"shortcut\x20icon\"\x20href
-SF:=\"/favicon\.ico\">\n\x20\x20\x20\x20<link\x20rel=\"stylesheet\"\x20hre
-SF:f=\"/ui-library/plesk-ui-library\.css\?3\.35\.2\">\n\x20\x20\x20\x20<sc
-SF:ript\x20src=\"/ui-library/plesk-ui-library\.min\.js\?3\.35\.2\"></scrip
-SF:t>\n\x20\x20\x20\x20<script\x20src=\"/cp/javascript/vendors\.js\"></scr
-SF:ipt>\n\x20\x20\x20\x20<script\x20src=\"/cp/javascript/main\.js\"></scri
-SF:pt>\n\x20\x20\x20\x20<script\x20src=\"/error_docs/uat\.js\?v3\"></scrip
-SF:t>\n<link\x20href=\"/error_docs/app\.css\?a8338f528ed5fc952063\"\x20rel
-SF:=\"stylesheet\"></head>\n<body>\n<div\x20id");
+SF:ons:\x20nosniff\r\n\r\n")%r(HTTPOptions,442,"HTTP/1\.1\x20405\x20Not\x2
+SF:0Allowed\r\nServer:\x20sw-cp-server\r\nDate:\x20Wed,\x2017\x20Jul\x2020
+SF:24\x2014:41:42\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\
+SF:x20916\r\nConnection:\x20close\r\nETag:\x20\"668512b1-394\"\r\n\r\n<!DO
+SF:CTYPE\x20html>\n<!--\x20Copyright\x201999-2024\.\x20WebPros\x20Internat
+SF:ional\x20GmbH\.\x20All\x20rights\x20reserved\.\x20-->\n<html\x20lang=\"
+SF:en\"\x20dir=\"ltr\">\n<head>\n\x20\x20\x20\x20<meta\x20charset=\"utf-8\
+SF:">\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=devic
+SF:e-width,\x20initial-scale=1,\x20shrink-to-fit=no\">\n\x20\x20\x20\x20<t
+SF:itle>405\x20Method\x20Not\x20Allowed</title>\n\x20\x20\x20\x20<link\x20
+SF:rel=\"shortcut\x20icon\"\x20href=\"/favicon\.ico\">\n\x20\x20\x20\x20<l
+SF:ink\x20rel=\"stylesheet\"\x20href=\"/ui-library/plesk-ui-library\.css\?
+SF:3\.38\.1\">\n\x20\x20\x20\x20<script\x20src=\"/ui-library/plesk-ui-libr
+SF:ary\.min\.js\?3\.38\.1\"></script>\n\x20\x20\x20\x20<script\x20src=\"/c
+SF:p/javascript/vendors\.js\"></script>\n\x20\x20\x20\x20<script\x20src=\"
+SF:/cp/javascript/main\.js\"></script>\n\x20\x20\x20\x20<script\x20src=\"/
+SF:error_docs/uat\.js\?v3\"></script>\n<link\x20href=\"/error_docs/app\.cs
+SF:s\?c510e3d47ce40086153c\"\x20rel=\"stylesheet\"></head>\n<body>")%r(Fou
+SF:rOhFourRequest,438,"HTTP/1\.1\x20404\x20Not\x20Found\r\nServer:\x20sw-c
+SF:p-server\r\nDate:\x20Wed,\x2017\x20Jul\x202024\x2014:41:42\x20GMT\r\nCo
+SF:ntent-Type:\x20text/html\r\nContent-Length:\x20908\r\nConnection:\x20cl
+SF:ose\r\nETag:\x20\"668512b1-38c\"\r\n\r\n<!DOCTYPE\x20html>\n<!--\x20Cop
+SF:yright\x201999-2024\.\x20WebPros\x20International\x20GmbH\.\x20All\x20r
+SF:ights\x20reserved\.\x20-->\n<html\x20lang=\"en\"\x20dir=\"ltr\">\n<head
+SF:>\n\x20\x20\x20\x20<meta\x20charset=\"utf-8\">\n\x20\x20\x20\x20<meta\x
+SF:20name=\"viewport\"\x20content=\"width=device-width,\x20initial-scale=1
+SF:,\x20shrink-to-fit=no\">\n\x20\x20\x20\x20<title>404\x20Page\x20Not\x20
+SF:Found</title>\n\x20\x20\x20\x20<link\x20rel=\"shortcut\x20icon\"\x20hre
+SF:f=\"/favicon\.ico\">\n\x20\x20\x20\x20<link\x20rel=\"stylesheet\"\x20hr
+SF:ef=\"/ui-library/plesk-ui-library\.css\?3\.38\.1\">\n\x20\x20\x20\x20<s
+SF:cript\x20src=\"/ui-library/plesk-ui-library\.min\.js\?3\.38\.1\"></scri
+SF:pt>\n\x20\x20\x20\x20<script\x20src=\"/cp/javascript/vendors\.js\"></sc
+SF:ript>\n\x20\x20\x20\x20<script\x20src=\"/cp/javascript/main\.js\"></scr
+SF:ipt>\n\x20\x20\x20\x20<script\x20src=\"/error_docs/uat\.js\?v3\"></scri
+SF:pt>\n<link\x20href=\"/error_docs/app\.css\?c510e3d47ce40086153c\"\x20re
+SF:l=\"stylesheet\"></head>\n<body>\n<div\x20");
 Service Info: Hosts:  oxd-mutu-01.oxyd.net, oxd-mutu-01
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Tue Mar 12 11:13:31 2024 -- 1 IP address (1 host up) scanned in 45.39 seconds
+# Nmap done at Wed Jul 17 14:41:57 2024 -- 1 IP address (1 host up) scanned in 32.18 seconds
