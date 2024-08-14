@@ -206,7 +206,7 @@
               "ip"           : "lesentreprises-sengagent.gouv.fr/185.231.164.8",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -345,8 +345,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "lesentreprises-sengagent.gouv.fr/185.231.164.8",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (49)"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 30 days (21)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -359,7 +359,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "lesentreprises-sengagent.gouv.fr/185.231.164.8",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "HIGH",
               "finding"      : "2024-09-04 21:59"
           }
 ,         {
@@ -507,7 +507,7 @@
               "ip"           : "lesentreprises-sengagent.gouv.fr/185.231.164.8",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1721229147"
+              "finding"      : "1723640876"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1098,6 +1098,6 @@
               "ip"           : "lesentreprises-sengagent.gouv.fr/185.231.164.8",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "55"
+              "finding"      : "54"
           }
 ]
