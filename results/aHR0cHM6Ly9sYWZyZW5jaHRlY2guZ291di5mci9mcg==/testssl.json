@@ -338,8 +338,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "lafrenchtech.gouv.fr/80.87.236.17",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "65 >= 60 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 60 days (37)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -352,7 +352,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "lafrenchtech.gouv.fr/80.87.236.17",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2024-09-20 23:59"
           }
 ,         {
@@ -500,7 +500,7 @@
               "ip"           : "lafrenchtech.gouv.fr/80.87.236.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1721228920"
+              "finding"      : "1723640663"
           }
 ,         {
               "id"           : "HSTS",
@@ -1091,6 +1091,6 @@
               "ip"           : "lafrenchtech.gouv.fr/80.87.236.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "55"
+              "finding"      : "84"
           }
 ]
