@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Wed Aug 14 12:30:25 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln impots.gouv.fr
+# Nmap 7.92 scan initiated Sat Sep 14 12:29:30 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln impots.gouv.fr
 Nmap scan report for impots.gouv.fr (145.242.11.100)
 Host is up (0.10s latency).
 Not shown: 997 filtered tcp ports (no-response)
@@ -15,10 +15,11 @@ PORT    STATE  SERVICE   VERSION
 |_    Content-Length: 0
 113/tcp closed ident
 443/tcp open   ssl/https
+|_http-trane-info: Problem with XML parsing of /evox/about
 | fingerprint-strings: 
 |   GetRequest, HTTPOptions: 
 |     HTTP/1.1 200 Mire
-|     Date: Wed, 14 Aug 2024 12:30:46 GMT
+|     Date: Sat, 14 Sep 2024 12:29:51 GMT
 |     Content-Type: text/html
 |     Cache-Control: no-cache, no-store, must-revalidate
 |     Pragma: no-cache
@@ -47,7 +48,7 @@ PORT    STATE  SERVICE   VERSION
 |_    <svg role="img" aria-label="impots.gouv.fr" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.92%I=7%D=8/14%Time=66BCA370%P=x86_64-alpine-linux-musl%r
+SF-Port80-TCP:V=7.92%I=7%D=9/14%Time=66E581B9%P=x86_64-alpine-linux-musl%r
 SF:(GetRequest,58,"HTTP/1\.0\x20302\x20Moved\x20Temporarily\r\nLocation:\x
 SF:20https://145\.242\.11\.100/\r\nContent-Length:\x200\r\n\r\n")%r(HTTPOp
 SF:tions,58,"HTTP/1\.0\x20302\x20Moved\x20Temporarily\r\nLocation:\x20http
@@ -56,9 +57,9 @@ SF:quest,7B,"HTTP/1\.0\x20302\x20Moved\x20Temporarily\r\nLocation:\x20http
 SF:s://145\.242\.11\.100/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nContent-L
 SF:ength:\x200\r\n\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=8/14%Time=66BCA376%P=x86_64-alpine-linux
-SF:-musl%r(GetRequest,4000,"HTTP/1\.1\x20200\x20Mire\r\nDate:\x20Wed,\x201
-SF:4\x20Aug\x202024\x2012:30:46\x20GMT\r\nContent-Type:\x20text/html\r\nCa
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=9/14%Time=66E581BF%P=x86_64-alpine-linux
+SF:-musl%r(GetRequest,4000,"HTTP/1\.1\x20200\x20Mire\r\nDate:\x20Sat,\x201
+SF:4\x20Sep\x202024\x2012:29:51\x20GMT\r\nContent-Type:\x20text/html\r\nCa
 SF:che-Control:\x20no-cache,\x20no-store,\x20must-revalidate\r\nPragma:\x2
 SF:0no-cache\r\nExpires:\x200\r\nContent-Length:\x20312174\r\nConnection:\
 SF:x20close\r\n\r\n<!DOCTYPE\x20html>\r\n<html\x20lang=\"fr\">\r\n\r\n<hea
@@ -76,8 +77,8 @@ SF:x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\"logo\">\r\n\x20\x20\x20\
 SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<svg\x20role=\"img\"
 SF:\x20aria-label=\"impots\.gouv\.fr\"\x20version=\"1\.1\"\x20id=\"Calque_
 SF:1\"\x20xmlns=\"http://www\.w3\.org/2000/svg\"\x20xlink=\"http://www\.w3
-SF:\.org/1999")%r(HTTPOptions,8000,"HTTP/1\.1\x20200\x20Mire\r\nDate:\x20W
-SF:ed,\x2014\x20Aug\x202024\x2012:30:46\x20GMT\r\nContent-Type:\x20text/ht
+SF:\.org/1999")%r(HTTPOptions,8000,"HTTP/1\.1\x20200\x20Mire\r\nDate:\x20S
+SF:at,\x2014\x20Sep\x202024\x2012:29:51\x20GMT\r\nContent-Type:\x20text/ht
 SF:ml\r\nCache-Control:\x20no-cache,\x20no-store,\x20must-revalidate\r\nPr
 SF:agma:\x20no-cache\r\nExpires:\x200\r\nContent-Length:\x20312174\r\nConn
 SF:ection:\x20close\r\n\r\n<!DOCTYPE\x20html>\r\n<html\x20lang=\"fr\">\r\n
@@ -98,4 +99,4 @@ SF:"Calque_1\"\x20xmlns=\"http://www\.w3\.org/2000/svg\"\x20xlink=\"http:/
 SF:/www\.w3\.org/1999");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Wed Aug 14 12:32:33 2024 -- 1 IP address (1 host up) scanned in 127.66 seconds
+# Nmap done at Sat Sep 14 12:31:40 2024 -- 1 IP address (1 host up) scanned in 130.35 seconds
