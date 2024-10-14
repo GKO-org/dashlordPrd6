@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Sat Sep 14 13:13:50 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.le-smv.gouv.fr
+# Nmap 7.92 scan initiated Mon Oct 14 13:24:57 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.le-smv.gouv.fr
 Host: 107.154.50.81 (mx.cnmosis.dirisi.defense.gouv.fr)	Status: Up
 Host: 107.154.50.81 (mx.cnmosis.dirisi.defense.gouv.fr)	Ports: 80/open/tcp//http?///, 113/closed/tcp//ident///, 443/open/tcp//ssl|https?///	Ignored State: filtered (997)
-# Nmap done at Sat Sep 14 13:17:28 2024 -- 1 IP address (1 host up) scanned in 217.89 seconds
+# Nmap done at Mon Oct 14 13:28:36 2024 -- 1 IP address (1 host up) scanned in 219.38 seconds
