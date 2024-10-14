@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sat Sep 14 12:57:40 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln kiosque-sig.gouv.fr
+# Nmap 7.92 scan initiated Mon Oct 14 13:06:40 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln kiosque-sig.gouv.fr
 Nmap scan report for kiosque-sig.gouv.fr (217.70.184.55)
-Host is up (0.079s latency).
+Host is up (0.082s latency).
 rDNS record for 217.70.184.55: webredir.gandi.net
 Not shown: 998 filtered tcp ports (no-response)
 PORT    STATE SERVICE        VERSION
@@ -8,4 +8,4 @@ PORT    STATE SERVICE        VERSION
 443/tcp open  ssl/tcpwrapped
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sat Sep 14 12:58:03 2024 -- 1 IP address (1 host up) scanned in 23.81 seconds
+# Nmap done at Mon Oct 14 13:07:04 2024 -- 1 IP address (1 host up) scanned in 24.12 seconds
