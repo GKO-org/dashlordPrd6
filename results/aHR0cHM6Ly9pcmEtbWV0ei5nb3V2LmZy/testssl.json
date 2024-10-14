@@ -262,7 +262,7 @@
               "ip"           : "ira-metz.gouv.fr/54.36.91.62",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "04FACC44A930E4A8D27FC3F44A90C2D21030"
+              "finding"      : "038FD71C4EE1BC064C09F2421DA54C962623"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -276,21 +276,21 @@
               "ip"           : "ira-metz.gouv.fr/54.36.91.62",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "722008A3490D4F46EF5A56E9588992D5D2F35ED0"
+              "finding"      : "70981C68318680FADD312CAA6BB2FEF266B0C8D6"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "ira-metz.gouv.fr/54.36.91.62",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "C107927563CEB6F83A80A418D870E2429F4032B1E1DA08062B7F31A922F4F35D"
+              "finding"      : "8EAF7E80B17A86E97954DFBBE8730CBD40D9B345F45AC516633D04AD98111183"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "ira-metz.gouv.fr/54.36.91.62",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFNTCCBB2gAwIBAgISBPrMRKkw5KjSf8P0SpDC0hAwMA0GCSqGSIb3DQEBCwUAMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNSMTEwHhcNMjQwNzEzMTUwNjQxWhcNMjQxMDExMTUwNjQwWjAbMRkwFwYDVQQDExBpcmEtbWV0ei5nb3V2LmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsyrF6M6go4IWhvkKgd24g98NxAqclXJLKxbBOtwxaXSJD4+1bmspclxBeUkVxbO6TCklzTvhujSVuYMwDQRsvTFiwjX0PjrZ/PJr3tfA738FraGRc99+8TX+TbjeKP+NiZXRrOvErzm8tp3pDfHhv9qbof87+l32Ei9gU4aFdxn0YbX7cB51dHJy+GqS6kG4Y5/BKtb2WGMJgldy0gX0sJ/INZXHvYZUYJz8R8o1zMYqr/HulqNMOt2mJVBoxpaQeEXkf1r06nSjg+AJ7KJ1OuZLq1w+cffx5s/EMcPIDn8+0X6rUv3XtVHpfpLu45n81APMjlmsjtMi6Ptbo7laSwIDAQABo4ICWTCCAlUwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSHgAM5ky4nLjKHaZbiu1gNvqJlyDAfBgNVHSMEGDAWgBTFz0ak6vTDwHpslcQtsF6SLybjuTBXBggrBgEFBQcBAQRLMEkwIgYIKwYBBQUHMAGGFmh0dHA6Ly9yMTEuby5sZW5jci5vcmcwIwYIKwYBBQUHMAKGF2h0dHA6Ly9yMTEuaS5sZW5jci5vcmcvMGEGA1UdEQRaMFiCFGRldi5pcmEtbWV0ei5nb3V2LmZyghBpcmEtbWV0ei5nb3V2LmZyghh3d3cuZGV2LmlyYS1tZXR6LmdvdXYuZnKCFHd3dy5pcmEtbWV0ei5nb3V2LmZyMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHUAPxdLT9ciR1iUHWUchL4NEu2QN38fhWrrwb8ohez4ZG4AAAGQrNi3BgAABAMARjBEAh8HAItM5utttCkp6cMgrLqJoepZe5fPWJSC/OCcyxV/AiEAjlxd6jnFCaev28Kh3FiIxI7BXLNGzsQzbPD5Tfid2cAAdgAZmBBxCfDWUi4wgNKeP2S7g24ozPkPUo7u385KPxa0ygAAAZCs2LcdAAAEAwBHMEUCIQDDnQQZM17Op3RPtQQAuhVhcYcTvLbFdKShrFNTGmsr2AIgD57gwzsVxyvV2t/Qxe5/yCAI07yDnXSCyOJ5FdYuSvUwDQYJKoZIhvcNAQELBQADggEBAJLj0Q8CEVAbOVIWssJiYut3Bm4X5hO+HopaZaz2XBmlDBtJ4DiajQgv2RWyBpsQxXuNLntZCKOLAlX8rbBfnz0FizB3HIhkalaovDyXF6wFSlbzNAm0yZqC3mpV/wkHqF58E5ltr7rOmKdy0TcVDNOzAuX3p8YVYgT1C9UPbWTPl1U6N0ftkhqVqlmNiFwHSeu2kDkjw4IPMZLQu0ogOzj/VcpOANTDD0fVZIJKkfHQkW23rtP0RtzLG3tvC5wPQEwkBzZs2y6Wg2Jx8LD8KbIO69lVjzX44Wrw88wZJOAB+wObzV6WmM6LeNZJo9ejs3KRYBOn+ZGixgCWD4gfRx0=\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFNTCCBB2gAwIBAgISA4/XHE7hvAZMCfJCHaVMliYjMA0GCSqGSIb3DQEBCwUAMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNSMTEwHhcNMjQwOTIzMTkxMzAwWhcNMjQxMjIyMTkxMjU5WjAbMRkwFwYDVQQDExBpcmEtbWV0ei5nb3V2LmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4zdQ0tfmD6g4hSvfYVFRaWY3Zm0kCFFSLbTgSA2bHI8fnftrhZRmH5vWFiwS2iHA4xgaHhsDJ8BS02et/nMumB5j0/UVd6/jzGaqM8nmrLsKSgdJmpKqX92iI6xgXRsI73mF7D5irypDqrCCKhPIZ2yhPbA6rgwTGg+SNwN5fEK0kBeUOav1Dvuwzi6vRj0y8AidP2n12UZRgnx4gfUMwZ49Lq/177J+7+hhRB/Zr6ziLtHNhS6ekZ+v59houF1lr7bV5+g1CVZRy+ITWXlAcor4EV6RMsO1PdBfx24dqLDES5jl46cn0jvtXfADjDYLrpse7tPDMeC9PWBZ7MOVvQIDAQABo4ICWTCCAlUwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQfyG8X/aCmC4emmScIKdEkGF5qSjAfBgNVHSMEGDAWgBTFz0ak6vTDwHpslcQtsF6SLybjuTBXBggrBgEFBQcBAQRLMEkwIgYIKwYBBQUHMAGGFmh0dHA6Ly9yMTEuby5sZW5jci5vcmcwIwYIKwYBBQUHMAKGF2h0dHA6Ly9yMTEuaS5sZW5jci5vcmcvMGEGA1UdEQRaMFiCFGRldi5pcmEtbWV0ei5nb3V2LmZyghBpcmEtbWV0ei5nb3V2LmZyghh3d3cuZGV2LmlyYS1tZXR6LmdvdXYuZnKCFHd3dy5pcmEtbWV0ei5nb3V2LmZyMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHYASLDja9qmRzQP5WoC+p0w6xxSActW3SyB2bu/qznYhHMAAAGSIIK4wQAABAMARzBFAiEA9gIb8vlmSaNaMLroMpq2Q1R6jFJu1AI0SZojEct7bdMCIBHOu8tzYb99lQRbC7QQRvm1gh0ULFT50j5nxPPlRmKxAHUA3+FW66oFr7WcD4ZxjajAMk6uVtlup/WlagHRwTu+UlwAAAGSIIK5VAAABAMARjBEAiA/zKyrwD8Flb+zwsV61fOVlnd67jhHf8/jm5vnaeuSqgIgbKvMCPECkjNT6IPZ6uHN708C6bAkfCPtqyzdqdRAJ+8wDQYJKoZIhvcNAQELBQADggEBABAbYJI/R2zolXqB55zTNka3oODMmxrRx22vGSqQ5JF5M3zZgMZuLSYcYi0DRrEmYXgBLizvDtTGYpY0TaWd39Y4g3NK6OH4f9ELBTYmSE3nwXnjckJRWS0NIHLj0fhEtA4c2+ThUHRx0IuKAlvhfJlc0xJJetyfMR6qSpnVjW2Emruxqt+2K/Z7t0mKbttMRzQvhKN+pDNwjCRFOzZVOebfzIzdnChudo4u8Cn58iJ1VNts4lNduewpWBg5dUKH0iKz6/7Piq6A/vNZQXs/oOoPUtPhk0Lx+I6PD6DGjQ2/VS54ioK/fspVIHKUQK2GY21wzgq0Q3DB7izNOu14bXY=\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -338,22 +338,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "ira-metz.gouv.fr/54.36.91.62",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (27)"
+              "severity"     : "OK",
+              "finding"      : "69 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "ira-metz.gouv.fr/54.36.91.62",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-07-13 15:06"
+              "finding"      : "2024-09-23 19:13"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "ira-metz.gouv.fr/54.36.91.62",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "2024-10-11 15:06"
+              "severity"     : "OK",
+              "finding"      : "2024-12-22 19:12"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -500,7 +500,7 @@
               "ip"           : "ira-metz.gouv.fr/54.36.91.62",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1726317756"
+              "finding"      : "1728910181"
           }
 ,         {
               "id"           : "HSTS",
@@ -673,7 +673,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=C107927563CEB6F83A80A418D870E2429F4032B1E1DA08062B7F31A922F4F35D"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=8EAF7E80B17A86E97954DFBBE8730CBD40D9B345F45AC516633D04AD98111183"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1056,6 +1056,6 @@
               "ip"           : "ira-metz.gouv.fr/54.36.91.62",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "50"
+              "finding"      : "54"
           }
 ]
