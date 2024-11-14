@@ -262,7 +262,7 @@
               "ip"           : "jura.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "B5FEB3C77433D24E317295119C08F8C6"
+              "finding"      : "0A7F36957B3FE151CD0E3D934A3A202B"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -276,21 +276,21 @@
               "ip"           : "jura.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "A078CB34CEC7A0AC5E038FAA5418669D3EB003B4"
+              "finding"      : "75B6FFCB3D9863181EBDA3F5793FBAE4EEC84854"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "jura.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "93DF894AB2F14609740BFD7B446DDDB00B80A9CE4BE02EFB2C09958D2DE340A7"
+              "finding"      : "6C6D60D39A8CE2A4746A5CC0B8984F345CC1A911F92CEBF5A46184BFA9AEC8DC"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "jura.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -338,22 +338,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "jura.gouv.fr/77.159.252.140",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "expires < 30 days (16)"
+              "severity"     : "OK",
+              "finding"      : "334 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "jura.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-03-22 23:00"
+              "finding"      : "2024-10-14 22:00"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "jura.gouv.fr/77.159.252.140",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "2024-10-30 22:59"
+              "severity"     : "OK",
+              "finding"      : "2025-10-14 21:59"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -500,7 +500,7 @@
               "ip"           : "jura.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1728911101"
+              "finding"      : "1731589258"
           }
 ,         {
               "id"           : "HTTP_headerAge",
@@ -680,7 +680,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=93DF894AB2F14609740BFD7B446DDDB00B80A9CE4BE02EFB2C09958D2DE340A7"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=6C6D60D39A8CE2A4746A5CC0B8984F345CC1A911F92CEBF5A46184BFA9AEC8DC"
           }
 ,         {
               "id"           : "LOGJAM-common_primes",
@@ -1063,6 +1063,6 @@
               "ip"           : "jura.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "57"
+              "finding"      : "104"
           }
 ]

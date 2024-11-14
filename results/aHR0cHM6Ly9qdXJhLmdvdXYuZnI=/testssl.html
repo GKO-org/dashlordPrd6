@@ -20,9 +20,9 @@
 #####################################################################</span>
 
   Using <i>OpenSSL 1.0.2-bad </i>  [~183 ciphers]
-  on fv-az1758-193:/home/testssl/bin/openssl.Linux.x86_64
+  on fv-az1766-400:/home/testssl/bin/openssl.Linux.x86_64
 
-<span style="color:white;background-color:black;"> Start 2024-10-14 13:04:36                --&gt;&gt; 77.159.252.140:443 (jura.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2024-11-14 12:59:56                --&gt;&gt; 77.159.252.140:443 (jura.gouv.fr) &lt;&lt;--</span>
 
  rDNS (77.159.252.140):  140.252.159.77.rev.sfr.net.
  Service detected:       HTTP
@@ -94,15 +94,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication
-<span style="font-weight:bold;"> Serial                       </span>B5FEB3C77433D24E317295119C08F8C6 (OK: length 16)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 A078CB34CEC7A0AC5E038FAA5418669D3EB003B4
-                              SHA256 93DF894AB2F14609740BFD7B446DDDB00B80A9CE4BE02EFB2C09958D2DE340A7
+<span style="font-weight:bold;"> Serial                       </span>0A7F36957B3FE151CD0E3D934A3A202B (OK: length 16)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 75B6FFCB3D9863181EBDA3F5793FBAE4EEC84854
+                              SHA256 6C6D60D39A8CE2A4746A5CC0B8984F345CC1A911F92CEBF5A46184BFA9AEC8DC
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>www.jura.gouv.fr </i> (CN in response to request w/o SNI: <i>default.phi67.zd-est.pref.gouv.fr </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>www.jura.gouv.fr jura.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#e52207;">expires &lt; 30 days (16)</span> (2024-03-22 23:00 --&gt; 2024-10-30 22:59)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">334 &gt;= 60 days</span> (2024-10-14 22:00 --&gt; 2025-10-14 21:59)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://crl.dhimyotis.com/servicesca.crl
                               http://crl.certigna.fr/servicesca.crl
@@ -148,7 +148,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=93DF894AB2F14609740BFD7B446DDDB00B80A9CE4BE02EFB2C09958D2DE340A7" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=93DF894AB2F14609740BFD7B446DDDB00B80A9CE4BE02EFB2C09958D2DE340A7</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=6C6D60D39A8CE2A4746A5CC0B8984F345CC1A911F92CEBF5A46184BFA9AEC8DC" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=6C6D60D39A8CE2A4746A5CC0B8984F345CC1A911F92CEBF5A46184BFA9AEC8DC</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      common prime with 2048 bits detected: <i>HAProxy</i> (<span style="color:#008817;">2048 bits</span>),
                                            but no DH EXPORT ciphers
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
@@ -209,7 +209,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A</span>
 <span style="font-weight:bold;"> Grade cap reasons            </span>Grade capped to A. HSTS is not offered
 
-<span style="color:white;background-color:black;"> Done 2024-10-14 13:05:31 [  57s] --&gt;&gt; 77.159.252.140:443 (jura.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2024-11-14 13:01:38 [ 104s] --&gt;&gt; 77.159.252.140:443 (jura.gouv.fr) &lt;&lt;--</span>
 
 
 </pre>
