@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ivg.gouv.fr</pre>
-<p class="lead">Thu Nov 14 12:50:47 2024 – Thu Nov 14 12:53:23 2024<br>1 hosts scanned.
+<p class="lead">Sat Dec 14 12:52:12 2024 – Sat Dec 14 12:54:46 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -150,17 +150,20 @@
     Connection: close
     Content-Type: text/html
     Content-Length: 245
-    &lt;html&gt;&lt;head&gt;&lt;title&gt;Request Rejected&lt;/title&gt;&lt;/head&gt;&lt;body&gt;The requested URL was rejected. Please consult with your administrator.&lt;br&gt;&lt;br&gt;Your support ID is: &lt;10600432829040651902&gt;&lt;br&gt;&lt;br&gt;&lt;a href='javascript:history.back();'&gt;[Go Back]&lt;/body&gt;&lt;/html&gt;
+    X-Frame-Options: SAMEORIGIN
+    X-XSS-Protection: 1; mode=block
+    X-Content-Type-Options: nosniff
+    &lt;html&gt;&lt;head&gt;&lt;title&gt;Request Rejected&lt;/title&gt;&lt;/head&gt;&lt;body&gt;The requested URL was rejected. Please consult with your administrator.&lt;br&gt;&lt;br&gt;Your support ID is: &lt;10853012110680474903&gt;&lt;br&gt;&lt;br&gt;&lt;a href='javascript:history.back();'&gt;[Go Back]&lt;/body&gt;&lt;/html&gt;
   GetRequest: 
     HTTP/1.1 400 Bad Request
-    Date: Thu, 14 Nov 2024 12:51:07 GMT
+    Date: Sat, 14 Dec 2024 12:52:31 GMT
     Content-Length: 226
     Content-Type: text/html; charset=iso-8859-1
     Age: 0
     X-Cache: MISS
     X-Cache-Hits: 0
     Connection: close
-    Set-Cookie: BIGipServerpool-handicap-v2.cegedim.cloud-HTTP=3468974346.20480.0000; path=/; Httponly; Secure
+    Set-Cookie: BIGipServerpool-handicap-v2.cegedim.cloud-HTTP=3485751562.20480.0000; path=/; Httponly; Secure
     &lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;
     &lt;html&gt;&lt;head&gt;
     &lt;title&gt;400 Bad Request&lt;/title&gt;
@@ -171,14 +174,14 @@
     &lt;/body&gt;&lt;/html&gt;
   HTTPOptions: 
     HTTP/1.1 400 Bad Request
-    Date: Thu, 14 Nov 2024 12:51:08 GMT
+    Date: Sat, 14 Dec 2024 12:52:32 GMT
     Content-Length: 226
     Content-Type: text/html; charset=iso-8859-1
     Age: 0
     X-Cache: MISS
     X-Cache-Hits: 0
     Connection: close
-    Set-Cookie: BIGipServerpool-handicap-v2.cegedim.cloud-HTTP=3468974346.20480.0000; path=/; Httponly; Secure
+    Set-Cookie: BIGipServerpool-handicap-v2.cegedim.cloud-HTTP=3485751562.20480.0000; path=/; Httponly; Secure
     &lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;
     &lt;html&gt;&lt;head&gt;
     &lt;title&gt;400 Bad Request&lt;/title&gt;
@@ -186,11 +189,7 @@
     &lt;h1&gt;Bad Request&lt;/h1&gt;
     &lt;p&gt;Your browser sent a request that this server could not understand.&lt;br /&gt;
     &lt;/p&gt;
-    &lt;/body&gt;&lt;/html&gt;
-  RTSPRequest: 
-    HTTP/1.1 400 Bad Request
-    Connection: close
-    Set-Cookie: BIGipServerpool-handicap-v2.cegedim.cloud-HTTP=3468974346.20480.0000; path=/; Httponly; Secure</pre>
+    &lt;/body&gt;&lt;/html&gt;</pre>
 </td></tr>
 </tbody>
 </table></div>
