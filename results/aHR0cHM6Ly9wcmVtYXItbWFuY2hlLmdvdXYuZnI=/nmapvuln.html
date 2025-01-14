@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln premar-manche.gouv.fr</pre>
-<p class="lead">Thu Nov 14 12:45:59 2024 – Thu Nov 14 12:46:34 2024<br>1 hosts scanned.
+<p class="lead">Tue Jan 14 12:45:58 2025 – Tue Jan 14 12:47:00 2025<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,9 +76,9 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>87.252.1.29</td>
+<td>87.98.187.73</td>
 <td>premar-manche.gouv.fr</td>
-<td>13</td>
+<td>2</td>
 <td>0</td>
 </tr></tbody>
 </table></div>
@@ -91,12 +91,12 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#87-252-1-29"><h3 class="panel-title">87.252.1.29 - premar-manche.gouv.fr</h3></div>
-<div class="panel-body collapse in" id="87-252-1-29">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#87-98-187-73"><h3 class="panel-title">87.98.187.73 - premar-manche.gouv.fr</h3></div>
+<div class="panel-body collapse in" id="87-98-187-73">
 <h4>Hostnames</h4>
 <ul>
 <li>premar-manche.gouv.fr (user)</li>
-<li>oxd-mutu-01.oxyd.net (PTR)</li>
+<li>ip73.ip-87-98-187.eu (PTR)</li>
 </ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
@@ -111,209 +111,100 @@
 </tr></thead>
 <tbody>
 <tr class="success">
-<td title="Port">21</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">ftp</td>
-<td title="Product">ProFTPD</td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:proftpd:proftpd">cpe:/a:proftpd:proftpd</a></td></tr>
-<tr class="success">
-<td title="Port">25</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">smtp</td>
-<td title="Product">Postfix smtpd</td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:postfix:postfix">cpe:/a:postfix:postfix</a></td></tr>
-<tr class="success">
-<td title="Port">53</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">domain</td>
-<td title="Product"></td>
-<td title="Version"></td>
-<td title="Extra Info">unknown banner: none</td>
-</tr>
-<tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSVersionBindReqTCP: 
-    version
-    bind
-    none</pre>
-</td></tr>
-<tr class="success">
 <td title="Port">80</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">http</td>
-<td title="Product">nginx</td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:igor_sysoev:nginx">cpe:/a:igor_sysoev:nginx</a></td></tr>
-<tr class="success">
-<td title="Port">106</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">tcpwrapped</td>
 <td title="Product"></td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
-<tr class="success">
-<td title="Port">110</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">pop3</td>
-<td title="Product">Dovecot pop3d</td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:dovecot:dovecot">cpe:/a:dovecot:dovecot</a></td></tr>
-<tr class="success">
-<td title="Port">143</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">imap</td>
-<td title="Product">Dovecot imapd</td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:dovecot:dovecot">cpe:/a:dovecot:dovecot</a></td></tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  DNSStatusRequestTCP: 
+    HTTP/1.1 400 Bad Request
+    content-length: 11
+    content-type: text/plain
+    date: Tue, 14 Jan 2025 12:46:18 GMT
+    connection: close
+    Request
+  DNSVersionBindReqTCP: 
+    HTTP/1.1 400 Bad Request
+    content-length: 11
+    content-type: text/plain
+    date: Tue, 14 Jan 2025 12:46:17 GMT
+    connection: close
+    Request
+  FourOhFourRequest: 
+    HTTP/1.1 426 Upgrade Required
+    content-length: 16
+    content-type: text/plain
+    date: Tue, 14 Jan 2025 12:46:13 GMT
+    connection: close
+    Upgrade Required
+  GenericLines: 
+    HTTP/1.1 400 Bad Request
+    content-length: 11
+    content-type: text/plain
+    date: Tue, 14 Jan 2025 12:46:14 GMT
+    connection: close
+    Request
+  GetRequest: 
+    HTTP/1.1 426 Upgrade Required
+    content-length: 16
+    content-type: text/plain
+    date: Tue, 14 Jan 2025 12:46:07 GMT
+    connection: close
+    Upgrade Required
+  HTTPOptions: 
+    HTTP/1.1 426 Upgrade Required
+    content-length: 16
+    content-type: text/plain
+    date: Tue, 14 Jan 2025 12:46:09 GMT
+    connection: close
+    Upgrade Required
+  Help: 
+    HTTP/1.1 400 Bad Request
+    content-length: 11
+    content-type: text/plain
+    date: Tue, 14 Jan 2025 12:46:19 GMT
+    connection: close
+    Request
+  RPCCheck: 
+    HTTP/1.1 400 Bad Request
+    content-length: 11
+    content-type: text/plain
+    date: Tue, 14 Jan 2025 12:46:15 GMT
+    connection: close
+    Request
+  RTSPRequest: 
+    HTTP/1.1 400 Bad Request
+    content-length: 11
+    content-type: text/plain
+    date: Tue, 14 Jan 2025 12:46:10 GMT
+    connection: close
+    Request
+  X11Probe: 
+    HTTP/1.1 400 Bad Request
+    content-length: 11
+    content-type: text/plain
+    date: Tue, 14 Jan 2025 12:46:11 GMT
+    connection: close
+    Request</pre>
+</td></tr>
 <tr class="success">
 <td title="Port">443</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">http</td>
-<td title="Product">nginx</td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:igor_sysoev:nginx">cpe:/a:igor_sysoev:nginx</a></td></tr>
-<tr class="success">
-<td title="Port">465</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">smtp</td>
-<td title="Product">Postfix smtpd</td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:postfix:postfix">cpe:/a:postfix:postfix</a></td></tr>
-<tr class="success">
-<td title="Port">587</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">smtp</td>
-<td title="Product">Postfix smtpd</td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:postfix:postfix">cpe:/a:postfix:postfix</a></td></tr>
-<tr class="success">
-<td title="Port">993</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">imap</td>
-<td title="Product">Dovecot imapd</td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:dovecot:dovecot">cpe:/a:dovecot:dovecot</a></td></tr>
-<tr class="success">
-<td title="Port">995</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">pop3</td>
-<td title="Product">Dovecot pop3d</td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:dovecot:dovecot">cpe:/a:dovecot:dovecot</a></td></tr>
-<tr class="success">
-<td title="Port">8443</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">https-alt</td>
-<td title="Product">sw-cp-server</td>
+<td title="Service">https</td>
+<td title="Product"></td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">sw-cp-server</pre>
-<h5>fingerprint-strings</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest: 
-    HTTP/1.1 404 Not Found
-    Server: sw-cp-server
-    Date: Thu, 14 Nov 2024 12:46:17 GMT
-    Content-Type: text/html
-    Content-Length: 908
-    Connection: close
-    ETag: "67052f57-38c"
-    &lt;!DOCTYPE html&gt;
-    &lt;!-- Copyright 1999-2024. WebPros International GmbH. All rights reserved. --&gt;
-    &lt;html lang="en" dir="ltr"&gt;
-    &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
-    &lt;title&gt;404 Page Not Found&lt;/title&gt;
-    &lt;link rel="shortcut icon" href="/favicon.ico"&gt;
-    &lt;link rel="stylesheet" href="/ui-library/plesk-ui-library.css?3.40.3"&gt;
-    &lt;script src="/ui-library/plesk-ui-library.min.js?3.40.3"&gt;&lt;/script&gt;
-    &lt;script src="/cp/javascript/vendors.js"&gt;&lt;/script&gt;
-    &lt;script src="/cp/javascript/main.js"&gt;&lt;/script&gt;
-    &lt;script src="/error_docs/uat.js?v4"&gt;&lt;/script&gt;
-    &lt;link href="/error_docs/app.css?146fc5cf56f78198ded8" rel="stylesheet"&gt;&lt;/head&gt;
-    &lt;body&gt;
-    &lt;div
-  GetRequest: 
-    HTTP/1.1 303 See Other
-    Server: sw-cp-server
-    Date: Thu, 14 Nov 2024 12:46:16 GMT
-    Content-Type: text/html; charset=UTF-8
-    Connection: close
-    Expires: Fri, 28 May 1999 00:00:00 GMT
-    Last-Modified: Thu, 14 Nov 2024 12:46:16 GMT
-    Cache-Control: no-store, no-cache, must-revalidate
-    Cache-Control: post-check=0, pre-check=0
-    Pragma: no-cache
-    P3P: CP="NON COR CURa ADMa OUR NOR UNI COM NAV STA"
-    X-Frame-Options: SAMEORIGIN
-    X-XSS-Protection: 1; mode=block
-    Location: https://localhost:8443/login.php
-    X-Content-Type-Options: nosniff
-  HTTPOptions: 
-    HTTP/1.1 405 Not Allowed
-    Server: sw-cp-server
-    Date: Thu, 14 Nov 2024 12:46:16 GMT
-    Content-Type: text/html
-    Content-Length: 916
-    Connection: close
-    ETag: "67052f57-394"
-    &lt;!DOCTYPE html&gt;
-    &lt;!-- Copyright 1999-2024. WebPros International GmbH. All rights reserved. --&gt;
-    &lt;html lang="en" dir="ltr"&gt;
-    &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
-    &lt;title&gt;405 Method Not Allowed&lt;/title&gt;
-    &lt;link rel="shortcut icon" href="/favicon.ico"&gt;
-    &lt;link rel="stylesheet" href="/ui-library/plesk-ui-library.css?3.40.3"&gt;
-    &lt;script src="/ui-library/plesk-ui-library.min.js?3.40.3"&gt;&lt;/script&gt;
-    &lt;script src="/cp/javascript/vendors.js"&gt;&lt;/script&gt;
-    &lt;script src="/cp/javascript/main.js"&gt;&lt;/script&gt;
-    &lt;script src="/error_docs/uat.js?v4"&gt;&lt;/script&gt;
-    &lt;link href="/error_docs/app.css?146fc5cf56f78198ded8" rel="stylesheet"&gt;&lt;/head&gt;
-    &lt;body&gt;</pre>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">nginx</pre>
 </td></tr>
 </tbody>
 </table></div>
@@ -333,131 +224,21 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>87.252.1.29 - premar-manche.gouv.fr</td>
-<td>21</td>
-<td>tcp</td>
-<td>ftp</td>
-<td>ProFTPD</td>
-<td></td>
-<td>cpe:/a:proftpd:proftpd</td>
-<td></td>
-</tr>
-<tr>
-<td>87.252.1.29 - premar-manche.gouv.fr</td>
-<td>25</td>
-<td>tcp</td>
-<td>smtp</td>
-<td>Postfix smtpd</td>
-<td></td>
-<td>cpe:/a:postfix:postfix</td>
-<td></td>
-</tr>
-<tr>
-<td>87.252.1.29 - premar-manche.gouv.fr</td>
-<td>53</td>
-<td>tcp</td>
-<td>domain</td>
-<td></td>
-<td></td>
-<td></td>
-<td>unknown banner: none</td>
-</tr>
-<tr>
-<td>87.252.1.29 - premar-manche.gouv.fr</td>
+<td>87.98.187.73 - premar-manche.gouv.fr</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
-<td>nginx</td>
-<td></td>
-<td>cpe:/a:igor_sysoev:nginx</td>
-<td></td>
-</tr>
-<tr>
-<td>87.252.1.29 - premar-manche.gouv.fr</td>
-<td>106</td>
-<td>tcp</td>
-<td>tcpwrapped</td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>87.252.1.29 - premar-manche.gouv.fr</td>
-<td>110</td>
-<td>tcp</td>
-<td>pop3</td>
-<td>Dovecot pop3d</td>
-<td></td>
-<td>cpe:/a:dovecot:dovecot</td>
-<td></td>
-</tr>
-<tr>
-<td>87.252.1.29 - premar-manche.gouv.fr</td>
-<td>143</td>
-<td>tcp</td>
-<td>imap</td>
-<td>Dovecot imapd</td>
-<td></td>
-<td>cpe:/a:dovecot:dovecot</td>
-<td></td>
-</tr>
-<tr>
-<td>87.252.1.29 - premar-manche.gouv.fr</td>
+<td>87.98.187.73 - premar-manche.gouv.fr</td>
 <td>443</td>
 <td>tcp</td>
-<td>http</td>
-<td>nginx</td>
+<td>https</td>
 <td></td>
-<td>cpe:/a:igor_sysoev:nginx</td>
-<td></td>
-</tr>
-<tr>
-<td>87.252.1.29 - premar-manche.gouv.fr</td>
-<td>465</td>
-<td>tcp</td>
-<td>smtp</td>
-<td>Postfix smtpd</td>
-<td></td>
-<td>cpe:/a:postfix:postfix</td>
-<td></td>
-</tr>
-<tr>
-<td>87.252.1.29 - premar-manche.gouv.fr</td>
-<td>587</td>
-<td>tcp</td>
-<td>smtp</td>
-<td>Postfix smtpd</td>
-<td></td>
-<td>cpe:/a:postfix:postfix</td>
-<td></td>
-</tr>
-<tr>
-<td>87.252.1.29 - premar-manche.gouv.fr</td>
-<td>993</td>
-<td>tcp</td>
-<td>imap</td>
-<td>Dovecot imapd</td>
-<td></td>
-<td>cpe:/a:dovecot:dovecot</td>
-<td></td>
-</tr>
-<tr>
-<td>87.252.1.29 - premar-manche.gouv.fr</td>
-<td>995</td>
-<td>tcp</td>
-<td>pop3</td>
-<td>Dovecot pop3d</td>
-<td></td>
-<td>cpe:/a:dovecot:dovecot</td>
-<td></td>
-</tr>
-<tr>
-<td>87.252.1.29 - premar-manche.gouv.fr</td>
-<td>8443</td>
-<td>tcp</td>
-<td>https-alt</td>
-<td>sw-cp-server</td>
 <td></td>
 <td></td>
 <td></td>

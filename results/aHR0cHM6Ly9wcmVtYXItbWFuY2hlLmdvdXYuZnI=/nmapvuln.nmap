@@ -1,146 +1,116 @@
-# Nmap 7.92 scan initiated Thu Nov 14 12:45:59 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln premar-manche.gouv.fr
-Nmap scan report for premar-manche.gouv.fr (87.252.1.29)
-Host is up (0.100s latency).
-rDNS record for 87.252.1.29: oxd-mutu-01.oxyd.net
-Not shown: 928 filtered tcp ports (no-response), 59 closed tcp ports (reset)
-PORT     STATE SERVICE       VERSION
-21/tcp   open  ftp           ProFTPD
-25/tcp   open  smtp          Postfix smtpd
-53/tcp   open  domain        (unknown banner: none)
+# Nmap 7.92 scan initiated Tue Jan 14 12:45:58 2025 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln premar-manche.gouv.fr
+Nmap scan report for premar-manche.gouv.fr (87.98.187.73)
+Host is up (0.16s latency).
+rDNS record for 87.98.187.73: ip73.ip-87-98-187.eu
+Not shown: 998 closed tcp ports (reset)
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http
 | fingerprint-strings: 
+|   DNSStatusRequestTCP: 
+|     HTTP/1.1 400 Bad Request
+|     content-length: 11
+|     content-type: text/plain
+|     date: Tue, 14 Jan 2025 12:46:18 GMT
+|     connection: close
+|     Request
 |   DNSVersionBindReqTCP: 
-|     version
-|     bind
-|_    none
-80/tcp   open  http          nginx
-106/tcp  open  tcpwrapped
-110/tcp  open  pop3          Dovecot pop3d
-143/tcp  open  imap          Dovecot imapd
-443/tcp  open  ssl/http      nginx
-465/tcp  open  ssl/smtp      Postfix smtpd
-587/tcp  open  smtp          Postfix smtpd
-993/tcp  open  ssl/imap      Dovecot imapd
-995/tcp  open  ssl/pop3      Dovecot pop3d
-8443/tcp open  ssl/https-alt sw-cp-server
-|_http-server-header: sw-cp-server
-| fingerprint-strings: 
+|     HTTP/1.1 400 Bad Request
+|     content-length: 11
+|     content-type: text/plain
+|     date: Tue, 14 Jan 2025 12:46:17 GMT
+|     connection: close
+|     Request
 |   FourOhFourRequest: 
-|     HTTP/1.1 404 Not Found
-|     Server: sw-cp-server
-|     Date: Thu, 14 Nov 2024 12:46:17 GMT
-|     Content-Type: text/html
-|     Content-Length: 908
-|     Connection: close
-|     ETag: "67052f57-38c"
-|     <!DOCTYPE html>
-|     <!-- Copyright 1999-2024. WebPros International GmbH. All rights reserved. -->
-|     <html lang="en" dir="ltr">
-|     <head>
-|     <meta charset="utf-8">
-|     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-|     <title>404 Page Not Found</title>
-|     <link rel="shortcut icon" href="/favicon.ico">
-|     <link rel="stylesheet" href="/ui-library/plesk-ui-library.css?3.40.3">
-|     <script src="/ui-library/plesk-ui-library.min.js?3.40.3"></script>
-|     <script src="/cp/javascript/vendors.js"></script>
-|     <script src="/cp/javascript/main.js"></script>
-|     <script src="/error_docs/uat.js?v4"></script>
-|     <link href="/error_docs/app.css?146fc5cf56f78198ded8" rel="stylesheet"></head>
-|     <body>
-|     <div
+|     HTTP/1.1 426 Upgrade Required
+|     content-length: 16
+|     content-type: text/plain
+|     date: Tue, 14 Jan 2025 12:46:13 GMT
+|     connection: close
+|     Upgrade Required
+|   GenericLines: 
+|     HTTP/1.1 400 Bad Request
+|     content-length: 11
+|     content-type: text/plain
+|     date: Tue, 14 Jan 2025 12:46:14 GMT
+|     connection: close
+|     Request
 |   GetRequest: 
-|     HTTP/1.1 303 See Other
-|     Server: sw-cp-server
-|     Date: Thu, 14 Nov 2024 12:46:16 GMT
-|     Content-Type: text/html; charset=UTF-8
-|     Connection: close
-|     Expires: Fri, 28 May 1999 00:00:00 GMT
-|     Last-Modified: Thu, 14 Nov 2024 12:46:16 GMT
-|     Cache-Control: no-store, no-cache, must-revalidate
-|     Cache-Control: post-check=0, pre-check=0
-|     Pragma: no-cache
-|     P3P: CP="NON COR CURa ADMa OUR NOR UNI COM NAV STA"
-|     X-Frame-Options: SAMEORIGIN
-|     X-XSS-Protection: 1; mode=block
-|     Location: https://localhost:8443/login.php
-|     X-Content-Type-Options: nosniff
+|     HTTP/1.1 426 Upgrade Required
+|     content-length: 16
+|     content-type: text/plain
+|     date: Tue, 14 Jan 2025 12:46:07 GMT
+|     connection: close
+|     Upgrade Required
 |   HTTPOptions: 
-|     HTTP/1.1 405 Not Allowed
-|     Server: sw-cp-server
-|     Date: Thu, 14 Nov 2024 12:46:16 GMT
-|     Content-Type: text/html
-|     Content-Length: 916
-|     Connection: close
-|     ETag: "67052f57-394"
-|     <!DOCTYPE html>
-|     <!-- Copyright 1999-2024. WebPros International GmbH. All rights reserved. -->
-|     <html lang="en" dir="ltr">
-|     <head>
-|     <meta charset="utf-8">
-|     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-|     <title>405 Method Not Allowed</title>
-|     <link rel="shortcut icon" href="/favicon.ico">
-|     <link rel="stylesheet" href="/ui-library/plesk-ui-library.css?3.40.3">
-|     <script src="/ui-library/plesk-ui-library.min.js?3.40.3"></script>
-|     <script src="/cp/javascript/vendors.js"></script>
-|     <script src="/cp/javascript/main.js"></script>
-|     <script src="/error_docs/uat.js?v4"></script>
-|     <link href="/error_docs/app.css?146fc5cf56f78198ded8" rel="stylesheet"></head>
-|_    <body>
-2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port53-TCP:V=7.92%I=7%D=11/14%Time=6735F116%P=x86_64-alpine-linux-musl%
-SF:r(DNSVersionBindReqTCP,31,"\0/\0\x06\x85\0\0\x01\0\x01\0\0\0\0\x07versi
-SF:on\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03\0\0\0\0\0\x05\x04none");
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port8443-TCP:V=7.92%T=SSL%I=7%D=11/14%Time=6735F118%P=x86_64-alpine-lin
-SF:ux-musl%r(GetRequest,216,"HTTP/1\.1\x20303\x20See\x20Other\r\nServer:\x
-SF:20sw-cp-server\r\nDate:\x20Thu,\x2014\x20Nov\x202024\x2012:46:16\x20GMT
-SF:\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nConnection:\x20clos
-SF:e\r\nExpires:\x20Fri,\x2028\x20May\x201999\x2000:00:00\x20GMT\r\nLast-M
-SF:odified:\x20Thu,\x2014\x20Nov\x202024\x2012:46:16\x20GMT\r\nCache-Contr
-SF:ol:\x20no-store,\x20no-cache,\x20must-revalidate\r\nCache-Control:\x20p
-SF:ost-check=0,\x20pre-check=0\r\nPragma:\x20no-cache\r\nP3P:\x20CP=\"NON\
-SF:x20COR\x20CURa\x20ADMa\x20OUR\x20NOR\x20UNI\x20COM\x20NAV\x20STA\"\r\nX
-SF:-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\
-SF:r\nLocation:\x20https://localhost:8443/login\.php\r\nX-Content-Type-Opt
-SF:ions:\x20nosniff\r\n\r\n")%r(HTTPOptions,442,"HTTP/1\.1\x20405\x20Not\x
-SF:20Allowed\r\nServer:\x20sw-cp-server\r\nDate:\x20Thu,\x2014\x20Nov\x202
-SF:024\x2012:46:16\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:
-SF:\x20916\r\nConnection:\x20close\r\nETag:\x20\"67052f57-394\"\r\n\r\n<!D
-SF:OCTYPE\x20html>\n<!--\x20Copyright\x201999-2024\.\x20WebPros\x20Interna
-SF:tional\x20GmbH\.\x20All\x20rights\x20reserved\.\x20-->\n<html\x20lang=\
-SF:"en\"\x20dir=\"ltr\">\n<head>\n\x20\x20\x20\x20<meta\x20charset=\"utf-8
-SF:\">\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=devi
-SF:ce-width,\x20initial-scale=1,\x20shrink-to-fit=no\">\n\x20\x20\x20\x20<
-SF:title>405\x20Method\x20Not\x20Allowed</title>\n\x20\x20\x20\x20<link\x2
-SF:0rel=\"shortcut\x20icon\"\x20href=\"/favicon\.ico\">\n\x20\x20\x20\x20<
-SF:link\x20rel=\"stylesheet\"\x20href=\"/ui-library/plesk-ui-library\.css\
-SF:?3\.40\.3\">\n\x20\x20\x20\x20<script\x20src=\"/ui-library/plesk-ui-lib
-SF:rary\.min\.js\?3\.40\.3\"></script>\n\x20\x20\x20\x20<script\x20src=\"/
-SF:cp/javascript/vendors\.js\"></script>\n\x20\x20\x20\x20<script\x20src=\
-SF:"/cp/javascript/main\.js\"></script>\n\x20\x20\x20\x20<script\x20src=\"
-SF:/error_docs/uat\.js\?v4\"></script>\n<link\x20href=\"/error_docs/app\.c
-SF:ss\?146fc5cf56f78198ded8\"\x20rel=\"stylesheet\"></head>\n<body>")%r(Fo
-SF:urOhFourRequest,438,"HTTP/1\.1\x20404\x20Not\x20Found\r\nServer:\x20sw-
-SF:cp-server\r\nDate:\x20Thu,\x2014\x20Nov\x202024\x2012:46:17\x20GMT\r\nC
-SF:ontent-Type:\x20text/html\r\nContent-Length:\x20908\r\nConnection:\x20c
-SF:lose\r\nETag:\x20\"67052f57-38c\"\r\n\r\n<!DOCTYPE\x20html>\n<!--\x20Co
-SF:pyright\x201999-2024\.\x20WebPros\x20International\x20GmbH\.\x20All\x20
-SF:rights\x20reserved\.\x20-->\n<html\x20lang=\"en\"\x20dir=\"ltr\">\n<hea
-SF:d>\n\x20\x20\x20\x20<meta\x20charset=\"utf-8\">\n\x20\x20\x20\x20<meta\
-SF:x20name=\"viewport\"\x20content=\"width=device-width,\x20initial-scale=
-SF:1,\x20shrink-to-fit=no\">\n\x20\x20\x20\x20<title>404\x20Page\x20Not\x2
-SF:0Found</title>\n\x20\x20\x20\x20<link\x20rel=\"shortcut\x20icon\"\x20hr
-SF:ef=\"/favicon\.ico\">\n\x20\x20\x20\x20<link\x20rel=\"stylesheet\"\x20h
-SF:ref=\"/ui-library/plesk-ui-library\.css\?3\.40\.3\">\n\x20\x20\x20\x20<
-SF:script\x20src=\"/ui-library/plesk-ui-library\.min\.js\?3\.40\.3\"></scr
-SF:ipt>\n\x20\x20\x20\x20<script\x20src=\"/cp/javascript/vendors\.js\"></s
-SF:cript>\n\x20\x20\x20\x20<script\x20src=\"/cp/javascript/main\.js\"></sc
-SF:ript>\n\x20\x20\x20\x20<script\x20src=\"/error_docs/uat\.js\?v4\"></scr
-SF:ipt>\n<link\x20href=\"/error_docs/app\.css\?146fc5cf56f78198ded8\"\x20r
-SF:el=\"stylesheet\"></head>\n<body>\n<div\x20");
-Service Info: Hosts:  oxd-mutu-01.oxyd.net, oxd-mutu-01
+|     HTTP/1.1 426 Upgrade Required
+|     content-length: 16
+|     content-type: text/plain
+|     date: Tue, 14 Jan 2025 12:46:09 GMT
+|     connection: close
+|     Upgrade Required
+|   Help: 
+|     HTTP/1.1 400 Bad Request
+|     content-length: 11
+|     content-type: text/plain
+|     date: Tue, 14 Jan 2025 12:46:19 GMT
+|     connection: close
+|     Request
+|   RPCCheck: 
+|     HTTP/1.1 400 Bad Request
+|     content-length: 11
+|     content-type: text/plain
+|     date: Tue, 14 Jan 2025 12:46:15 GMT
+|     connection: close
+|     Request
+|   RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     content-length: 11
+|     content-type: text/plain
+|     date: Tue, 14 Jan 2025 12:46:10 GMT
+|     connection: close
+|     Request
+|   X11Probe: 
+|     HTTP/1.1 400 Bad Request
+|     content-length: 11
+|     content-type: text/plain
+|     date: Tue, 14 Jan 2025 12:46:11 GMT
+|     connection: close
+|_    Request
+443/tcp open  ssl/https
+|_http-server-header: nginx
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.92%I=7%D=1/14%Time=67865C91%P=x86_64-alpine-linux-musl%r
+SF:(GetRequest,97,"HTTP/1\.1\x20426\x20Upgrade\x20Required\r\ncontent-leng
+SF:th:\x2016\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2014\x20Jan\
+SF:x202025\x2012:46:07\x20GMT\r\nconnection:\x20close\r\n\r\nUpgrade\x20Re
+SF:quired")%r(HTTPOptions,97,"HTTP/1\.1\x20426\x20Upgrade\x20Required\r\nc
+SF:ontent-length:\x2016\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2
+SF:014\x20Jan\x202025\x2012:46:09\x20GMT\r\nconnection:\x20close\r\n\r\nUp
+SF:grade\x20Required")%r(RTSPRequest,8D,"HTTP/1\.1\x20400\x20Bad\x20Reques
+SF:t\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20T
+SF:ue,\x2014\x20Jan\x202025\x2012:46:10\x20GMT\r\nconnection:\x20close\r\n
+SF:\r\nBad\x20Request")%r(X11Probe,8D,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue
+SF:,\x2014\x20Jan\x202025\x2012:46:11\x20GMT\r\nconnection:\x20close\r\n\r
+SF:\nBad\x20Request")%r(FourOhFourRequest,97,"HTTP/1\.1\x20426\x20Upgrade\
+SF:x20Required\r\ncontent-length:\x2016\r\ncontent-type:\x20text/plain\r\n
+SF:date:\x20Tue,\x2014\x20Jan\x202025\x2012:46:13\x20GMT\r\nconnection:\x2
+SF:0close\r\n\r\nUpgrade\x20Required")%r(GenericLines,8D,"HTTP/1\.1\x20400
+SF:\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/pl
+SF:ain\r\ndate:\x20Tue,\x2014\x20Jan\x202025\x2012:46:14\x20GMT\r\nconnect
+SF:ion:\x20close\r\n\r\nBad\x20Request")%r(RPCCheck,8D,"HTTP/1\.1\x20400\x
+SF:20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plai
+SF:n\r\ndate:\x20Tue,\x2014\x20Jan\x202025\x2012:46:15\x20GMT\r\nconnectio
+SF:n:\x20close\r\n\r\nBad\x20Request")%r(DNSVersionBindReqTCP,8D,"HTTP/1\.
+SF:1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x2
+SF:0text/plain\r\ndate:\x20Tue,\x2014\x20Jan\x202025\x2012:46:17\x20GMT\r\
+SF:nconnection:\x20close\r\n\r\nBad\x20Request")%r(DNSStatusRequestTCP,8D,
+SF:"HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent
+SF:-type:\x20text/plain\r\ndate:\x20Tue,\x2014\x20Jan\x202025\x2012:46:18\
+SF:x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request")%r(Help,8D,"HTTP/
+SF:1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:
+SF:\x20text/plain\r\ndate:\x20Tue,\x2014\x20Jan\x202025\x2012:46:19\x20GMT
+SF:\r\nconnection:\x20close\r\n\r\nBad\x20Request");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Thu Nov 14 12:46:34 2024 -- 1 IP address (1 host up) scanned in 35.08 seconds
+# Nmap done at Tue Jan 14 12:47:00 2025 -- 1 IP address (1 host up) scanned in 62.24 seconds
