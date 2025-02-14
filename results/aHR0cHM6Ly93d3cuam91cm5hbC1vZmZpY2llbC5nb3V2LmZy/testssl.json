@@ -328,6 +328,13 @@
               "finding"      : "Ok via SAN (SNI mandatory)"
           }
 ,         {
+              "id"           : "cert_trust_wildcard",
+              "ip"           : "www.journal-officiel.gouv.fr/109.232.232.161",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "trust is via wildcard"
+          }
+,         {
               "id"           : "cert_chain_of_trust",
               "ip"           : "www.journal-officiel.gouv.fr/109.232.232.161",
               "port"         : "443",
@@ -346,7 +353,7 @@
               "ip"           : "www.journal-officiel.gouv.fr/109.232.232.161",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "302 >= 60 days"
+              "finding"      : "271 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -542,14 +549,14 @@
               "ip"           : "www.journal-officiel.gouv.fr/109.232.232.161",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "+5 (± 1.5) seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.journal-officiel.gouv.fr/109.232.232.161",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1736859476"
+              "finding"      : "1739537727"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -634,6 +641,13 @@
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "1; mode=block"
+          }
+,         {
+              "id"           : "Permissions-Policy",
+              "ip"           : "www.journal-officiel.gouv.fr/109.232.232.161",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "midi=(),microphone=(),camera=(),magnetometer=(),gyroscope=(),fullscreen=(self),payment=()"
           }
 ,         {
               "id"           : "Referrer-Policy",
@@ -1349,7 +1363,7 @@
               "ip"           : "www.journal-officiel.gouv.fr/5.104.97.33",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "sessionresumption_ID",
@@ -1478,6 +1492,13 @@
               "finding"      : "Ok via SAN (SNI mandatory)"
           }
 ,         {
+              "id"           : "cert_trust_wildcard",
+              "ip"           : "www.journal-officiel.gouv.fr/5.104.97.33",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "trust is via wildcard"
+          }
+,         {
               "id"           : "cert_chain_of_trust",
               "ip"           : "www.journal-officiel.gouv.fr/5.104.97.33",
               "port"         : "443",
@@ -1496,7 +1517,7 @@
               "ip"           : "www.journal-officiel.gouv.fr/5.104.97.33",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "302 >= 60 days"
+              "finding"      : "271 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1699,7 +1720,7 @@
               "ip"           : "www.journal-officiel.gouv.fr/5.104.97.33",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1736859570"
+              "finding"      : "1739537861"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1784,6 +1805,13 @@
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "1; mode=block"
+          }
+,         {
+              "id"           : "Permissions-Policy",
+              "ip"           : "www.journal-officiel.gouv.fr/5.104.97.33",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "midi=(),microphone=(),camera=(),magnetometer=(),gyroscope=(),fullscreen=(self),payment=()"
           }
 ,         {
               "id"           : "Referrer-Policy",
@@ -2304,6 +2332,6 @@
               "ip"           : "www.journal-officiel.gouv.fr/5.104.97.33",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "194"
+              "finding"      : "260"
           }
 ]
