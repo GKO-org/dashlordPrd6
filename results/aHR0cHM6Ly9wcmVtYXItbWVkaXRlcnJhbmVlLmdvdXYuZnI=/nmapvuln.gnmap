@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Tue Jan 14 12:46:32 2025 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln premar-mediterranee.gouv.fr
+# Nmap 7.92 scan initiated Fri Feb 14 12:44:30 2025 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln premar-mediterranee.gouv.fr
 Host: 87.98.187.73 (ip73.ip-87-98-187.eu)	Status: Up
-Host: 87.98.187.73 (ip73.ip-87-98-187.eu)	Ports: 80/open/tcp//http///, 443/open/tcp//ssl|https///	Ignored State: closed (998)
-# Nmap done at Tue Jan 14 12:47:35 2025 -- 1 IP address (1 host up) scanned in 62.84 seconds
+Host: 87.98.187.73 (ip73.ip-87-98-187.eu)	Ports: 80/open/tcp//http///, 443/open/tcp//ssl|https///	Ignored State: filtered (998)
+# Nmap done at Fri Feb 14 12:45:32 2025 -- 1 IP address (1 host up) scanned in 61.98 seconds
